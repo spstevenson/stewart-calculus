@@ -708,9 +708,107 @@
 	\begin{enumerate}
 		\item $300^{\circ}$
 
-			$\frac{300\pi}{180} = $
+			$\frac{300\pi}{180} = 5.2360$ radians
 		\item $ - 28^{\circ}$
+
+			$\frac{-28\pi}{180} = -0.4887$ radians
 	\end{enumerate}
+	\item Convert from radians to degrees.
+
+	\begin{enumerate}
+		\item $5\pi / 6$
+
+			$\frac{5 \pi \times 180}{6\pi} = 150$
+
+		\item 2
+
+			$\frac{2 \times 180}{\pi} = 114.59...$
+	\end{enumerate}
+
+	\item Find the length of an arc of a circle with radius 12 cm if the arc subtends an angle of $30^{\circ}$.
+
+		$a = r\theta$
+		
+		$\theta = \frac{30 \times \pi}{180} = \frac{\pi}{6}$
+
+		$a = 12\frac{\pi}{6} = 2\pi$
+
+	\item Find the exact values.
+	\begin{enumerate}
+		\item $\tan(\pi/3)$
+			The angle is $\pi/3$ so we know the opp = $\sqrt{3}$, adj = 1 and hyp = 2.
+			
+			$\tan(\pi/3) = \sqrt{3}$
+
+		\item $\sin(7\pi/6)$
+
+			The angle is $7\pi/6$ so we know that opp = $-\sqrt{3}$, adj = --1 and hyp = 2.
+
+			$\sin(7\pi/6) = -\frac{\sqrt{3}}{2}$
+
+		\item $\sec(5\pi/3)$
+
+			The angle is $5\pi/3$ so we know that opp = $-\sqrt{3}$ , adj = 1 and hyp = 2.
+
+			$\sec(5\pi/3) = 2$
+	\end{enumerate}
+
+		\item Express the lengths $a$ and $b$ in the figure in terms of $\theta$.
+
+			$$a = 24 \sin\theta$$
+			$$b = 24 \cos\theta$$
+
+		\item If $\sin x = \frac{1}{3}$ and $\sec y = \frac{5}{4}$, where $x$ and $y$ lie between 0 and
+			$\pi/2$ , evaluate $\sin(x + y)$.
+
+			Firstly can convert $\sec y = \frac{5}{4}$ into $\cos y = \frac{4}{5}$
+
+			Working backwords we can use a trigonometric identity...
+
+			$$ \sin (x + y) = \sin x\cos y + \sin y\cos x $$
+
+			First the first term we can substitute in our values...
+
+			$$ \frac{4}{15} + \sin y\cos{x} $$
+
+			Now we need to find the value of $\sin y$ . From $\cos y $ we can imagine a triangle with
+			hypotenuse 5 and adjacent 4, so the opposite must be $\sqrt{5^2 - 4^2} = 3$. Therefore
+			$\sin y = \frac{3}{5}$ .
+
+			Repeating for $\cos x$. From $\sin x$ we can imagine a triangle with hypotenuse 3 and
+			opposite 1, so the adjacent must be $\sqrt{3^2 - 1^2} = 2\sqrt{2}$. Therefore
+			$\cos x = \frac{2\sqrt{2}}{3}$
+
+			$$ \frac{4}{15} + \frac{3}{5} \times \frac{2\sqrt{2}}{3}$$
+			$$\frac{4}{15} + \frac{6\sqrt{2}}{15} = \frac{1}{15}(4 + 6\sqrt{2})$$
+
+		\item Prove these identities.
+
+		\begin{enumerate}
+			\item $\tan \theta \sin \theta + \cos \theta = \sec \theta$
+
+				$$ \frac{\sin \theta}{\cos \theta} \sin \theta + \cos \theta $$
+				$$ \frac{\sin^2 \theta}{\cos \theta} + \cos \theta $$
+				$$ \frac{1 - \cos^2 \theta}{\cos \theta} + \cos \theta $$
+				$$ \frac{1}{\cos \theta} - \cos \theta + \cos \theta $$
+				$$ \frac{1}{\cos \theta} $$
+
+			\item $\frac{ 2 \tan x}{1 + tan^2 x} = \sin 2x$
+				$$ \frac{2\tan x}{\sec^2 x} $$
+				$$ 2 \tan x \cos^2 x $$
+				$$ 2 \frac{\sin x}{\cos x}\cos^2 x $$
+				$$ 2 \sin x \cos x = \sin 2x $$
+		\end{enumerate}
+
+		\item Find all values of \emph{x} such that $ \sin 2x = \sin x $ and $0 \leq x \leq 2 \pi $
+
+			$$ \sin2x = \sin x $$
+			$$ 2\sin x\cos x = \sin x $$
+			$$ 2 \cos x = 1 $$
+			$$ \cos x = \frac{1}{2} $$
+			$$ x = \frac{\pi}{3} $$
+
+			So the values of \emph{x} that satisfy this are 0, $\frac{\pi}{3}$, $\pi$, $\frac{5\pi}{3}$, $2\pi$.
 \end{enumerate}
 
 \end{document}

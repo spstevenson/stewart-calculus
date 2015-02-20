@@ -491,7 +491,53 @@
 			$$g \circ f = 1 / (1 - x^3)$$
 			$$ 1 - x^3 \neq 0, x^3 \neq 1, x \neq \sqrt[3]{1}$$
 			$$\text{Domain: } \{x | x \neq \sqrt[3]{1}\}$$
+
+			\item 
+			$$f \circ f = 1 - (1 - x^3)^3$$
+			$$f \circ f = 1 - (1^3 + 3(1)^2(-x^3) + 3(1)(-x^3)^2 + (-x^3)^3$$
+			$$f \circ f = 3x^6 - x^9 - 3x^3$$
+			$$\text{Domain: } (-\infty, \infty)$$
+
+			\item
+			$$g \circ g = \frac{1}{\frac{1}{x}}$$
+			$$ g \circ g = x$$
 		\end{enumerate}
+
+		\item $f(x) = 1 - 3x, g(x) = \cos x$
+
+			\begin{enumerate}
+
+				\item
+				$$f \circ g = 1 - 3(\cos x)$$
+				$$f \circ g = 1 - 3\cos x$$
+				$$\text{Domain: } (-\infty, \infty)$$
+
+				\item
+				$$g \circ f = \cos(1 - 3x)$$
+				$$\text{Domain: } (-\infty, \infty)$$
+
+				\item 
+				$$f \circ f = 1 - 3(1 - 3x)$$
+				$$f \circ f = 1 - 3 + 9x = 9x -2$$
+				$$\text{Domain: } (-\infty,\infty)$$
+
+				\item
+				$$g \circ g = \cos(\cos x)$$
+				$$\text{Domain: } (-\infty, \infty)$$
+			\end{enumerate}
+
+		\item $f(x) = \sqrt{x}, g(x) = \sqrt[3]{1 - x}$
+
+			\begin{enumerate}
+				\item
+				$$f \circ g = \sqrt{\sqrt[3]{1-x}} = \sqrt[6]{1-x}$$
+				$$ 1 - x \geq 0, \text{ so } x \leq 1$$
+				$$\text{Domain: } (-\infty, 1]$$
+
+				\item
+				$$g \circ f = \sqrt[3]{1 - \sqrt{x}}$$
+				$$ \text{Domain: } [0, \infty)$$
+			\end{enumerate}
 
 	\end{enumerate}
 \end{document}

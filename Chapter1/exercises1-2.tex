@@ -695,9 +695,73 @@
 				$$r = 60t$$
 				
 			\item If \emph{A} is the area of this circle as a function of the radius, find $A \circ r$ and interpret it.
-			
+				
+				$$A = \pi(60t)^2 = 3600\pi t^2$$
+				
+			This is Area of the circle made by the ripple at a particular time \emph{t} in seconds.
+
 				
 		\end{enumerate}
+		
+		\item An airplane is flying at a speed of 350 km/h at an altitude of 1 km and passes directly over a radar
+			station at time $t = 0$.
+			
+		\begin{enumerate}
+			\item Express the horizontal distance \emph{d} in kilometres that the plane has flown as function
+				of \emph{t}.
+				
+				$$d(t) = 350t$$
+				
+			\item Express the distance \emph{s} between the plane and the radar station as a function of \emph{d}.
+			
+				$$s(d) = \sqrt{1 + d^2}$$
+				
+			\item Use composition to express \emph{s} as a function of \emph{t}.
+			
+				$$s(t) = \sqrt{1 + (350t)^2}$$
+				$$s(t) = \sqrt{1 + 122500t^2}$$
+		\end{enumerate}
+		
+		\item The \textbf{Heaviside function H} is defined by
+		
+\begin{displaymath}
+   H(t) = \left\{
+     \begin{array}{lr}
+       0 & \text{if } t < 0\\
+       1 &  \text{if } t \geq 0
+     \end{array}
+   \right.
+\end{displaymath} 
 
+		It is used in the study of electric circuits to represent the sudden surge of electric current, or voltage, when
+		a switch is instantaneously turned on.
+		
+		\begin{enumerate}
+		
+			\item Sketch a graph of the Heaviside function.
+			
+			\item Sketch the graph of the voltage $V(t)$ in a circuit if the switch is turned on at time $t = 0$ and 
+				120 volts are applied instantaneously to the circuit. Write a formula for $V(t)$ in terms of $H(t)$.
+				
+			\item Sketch the graph of the voltage $V(t)$ in a circuit if the switch is turned on at a time $t = 5$ seconds
+				and 240 volts are applied instantaneously to the circuit. Write a formula for $V(t)$ in terms of $H(t)$.
+				(Note that starting at $t = 5$ corresponds to a translation).
+		\end{enumerate}
+		
+		\item The Heaviside function defined in Exercise 59 can also be used to define the \textbf{ramp function} $y = ctH(t)$,
+			which represents a gradual increase in voltage or current in a circuit.
+			
+		\begin{enumerate}
+		
+			\item Sketch a graph of the ramp function $y = tH(t)$.
+			
+			\item Sketch the graph of the voltage $V(t)$ in a circuit if the switch is turned on at a time $t = 0$ and the
+				voltage is gradually increased to 120 volts over a 60-second time interval. Write a formula for
+				$V(t)$ in terms of $H(t)$ for $t \leq 60$.
+				
+			\item Sketch the graph of the voltage $V(t)$ in a circuit if the switch is turned on a time $t = 7$ seconds
+				and the voltage is gradually increased to 100 volts over a period of 25 seconds. Write a formula
+				for $V(t)$ in terms of $H(t)$ for $t \leq 32$.
+		\end{enumerate}
 	\end{enumerate}
 \end{document}

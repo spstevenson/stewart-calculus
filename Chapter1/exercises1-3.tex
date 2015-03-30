@@ -633,7 +633,8 @@
 					
 				\item Check your answer in part (a) by evaluating $f(x)$ for values of $x$ that approach 0.
 			\end{enumerate}
-			
+		
+		\item
 			\begin{enumerate}
 				\item Estimate the value of
 				
@@ -758,10 +759,52 @@
 				
 				$$x = \sqrt{1.5} = 1.22474487139 \text{ or } x = \sqrt{0.5} = 0.70710678118$$
 				
+%<<<<<<< HEAD
 				$$| 1.22474487139 - 1| = 0.22474487139 $$
 				$$ \text{or } |0.70710678118 - 1 | = 0.29289321881$$
 				
 				So $\delta = 0.22474487139$.
+				
+		\item Use a graph to find a number $\delta$ such that
+		
+			$$\text{ if } | x - \frac{\pi}{4} | < \delta \text{ then } | \tan x - 1 | < 0.2$$
+			
+		\item Use a graph to find a number $\delta$ such that 
+		
+			$$\text{if } | x - 1 | < \delta \text{ then } | \frac{2x}{x^2 + 4} - 0.4 | < 0.1$$
+			
+		\item A machinist is required to manufacture a circular metal disk with area 1000$\text{cm}^2$.
+		
+			\begin{enumerate}
+				\item What radius produces such a disk?
+				
+					$$ 1000 = \pi r^2$$
+					$$r = \sqrt{\frac{1000}{\pi}}$$
+					$$r = 17.8412411615$$
+					
+				\item If the machinist is allowed an error tolerance of $\pm 5 \text{cm}^2$ in the area of the disk,
+					how close to the ideal radius in part (a) must the machinist control the radius?
+					
+					$$ \sqrt{\frac{1005}{\pi}} = 17.8857886495$$
+					$$ \sqrt{\frac{995}{\pi}} = 17.7965821649$$
+					
+					So
+					
+					$$|17.8857886495 - 17.8412411615| = 0.044547488 $$
+					$$|17.7965821649 - 17.8412411615 = 0.0446589966$$
+					
+					So the radius must be $17.8412411615 \pm 0.044547488$
+
+				\item In terms of the $\epsilon$, $\delta$ definition of $\lim \limits _{x \to a} f(x) = L$, what is $x$?
+					What is $f(x)$? What is $a$? What is $L$? What is the value of $\epsilon$ given? What is the
+					corresponding value of $\delta$?
+					
+					$x$ is the radius. $f(x)$ is the area of the circle $\pi r^2$. $a$ is the value we must make the 
+					radius close to, in this case 17.8412411615. $L$ is the value we are trying to make the area close
+					enough to, in this case 1000. $\delta$ is the distane from $a$ we must be, in this case $\pm 0.044547488$.
+					$\epsilon$ the distance from $L$ we need to get, in this case $\pm 5$.
+
+			\end{enumerate}
 				
 		\item[29--32] Prove the statement using the $\epsilon$, $\delta$ definition of a limit and illustrate with a diagram
 				like Figure 15.
@@ -774,6 +817,12 @@
 			so
 			
 			$$3|x - 3| < \epsilon \text{ and } |x - 3| < \frac{\epsilon}{3} \text{ therefore } \delta < \frac{\epsilon}{3}$$
+
+				$$| 1.22474487139 - 1| = 0.22474487139 $$ 
+				$$\text{ or } |0.70710678118 - 1 | = 0.29289321881$$
+				
+				So $\delta = 0.22474487139$.
+				
 			
 		\item[33--44] Prove the statement using the $\epsilon$, $\delta$ definition of a limit.
 		

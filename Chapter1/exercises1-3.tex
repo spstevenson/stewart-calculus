@@ -871,7 +871,7 @@
 			
 			$$|\frac{x}{4} - \frac{6}{4}| < \epsilon$$
 			$$4|\frac{x}{4} - \frac{6}{4}| < 4\epsilon$$
-			$$|\frac{x} - 6| < 4\epsilon$$
+			$$|x - 6| < 4\epsilon$$
 			
 			$$\delta = 4\epsilon$$
 			
@@ -894,5 +894,45 @@
 			$$|\frac{(x+3)(x-2)}{x-2} - 5| < \epsilon$$
 			
 			$$\text{So } \lim \limits _{x \to 2} \frac{x^2 + x - 6}{x - 2} = 5$$
+			
+		\item $\lim \limits _{x \to 1.5} \frac{9 - 4x^2}{3 + 2x} = 6$
+		
+			$$|\frac{9 - 4x^2}{3 + 2x} - 6| < \epsilon$$
+			$$|\frac{9 - 4x^2 - 6(3 + 2x)}{3 + 2x}| < \epsilon$$
+			$$|\frac{9 - 4x^2 - 18 - 12x}{3 + 2x}| < \epsilon$$
+			$$|\frac{(2x + 3)(2x - 3)}{2x + 3}| < \epsilon$$
+			
+			$$|2x - 3| < \epsilon$$
+			$$|x - 1.5| < \frac{\epsilon}{2}$$
+			$$ \delta = \frac{\epsilon}{2}$$
+			
+			$$\text{If } 0 < | x - 1.5| < \delta \text{ then } 2| x - 1.5| < \epsilon 
+			\text{ so } \lim \limits _{x \to 1.5} \frac{9 - 4x^2}{3 + 2x} = 6$$
+			
+		\item $\lim \limits _ { x \to a} x = a$
+		
+			$$| x - a | < \epsilon$$
+			$$| x - a | < \delta$$
+			$$ \delta = \epsilon$$
+			
+			$$\text{If } 0 < | x - a| < \delta \text{ then } |x - a| < \epsilon \text{ so } \lim \limits _ { x \to a} x = a$$
+			
+			
+		\item $\lim \limits _ {x \to a} c = c$
+		
+			$$|c - c| < \epsilon \text{ so } \epsilon > 0$$
+			
+			Therefore $|c - c| < \epsilon$ is satisfied independently no matter what the value of $|x - a| < \delta$.
+			
+		\item $\lim \limits _{x \to 0} x^2 = 0$
+		
+			$$|x^2 - 0| < \epsilon$$
+			$$|x^2| < \epsilon$$
+			$$|x| < \sqrt{\epsilon}$$
+			$$|x - 0 | < \sqrt{\epsilon} \text{ so } \delta = \sqrt{\epsilon}$$
+			
+			$$\text{If } 0 < |x - 0| < \delta \text{ then } |x - 0| < \sqrt{\epsilon} \text{ so } 
+			\lim \limits _{x \to 0} x^2 = 0$$
+			
 	\end{enumerate}
 \end{document}

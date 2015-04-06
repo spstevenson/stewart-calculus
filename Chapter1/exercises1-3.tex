@@ -934,5 +934,54 @@
 			$$\text{If } 0 < |x - 0| < \delta \text{ then } |x - 0| < \sqrt{\epsilon} \text{ so } 
 			\lim \limits _{x \to 0} x^2 = 0$$
 			
+		\item $\lim \limits _{x \to 0} x^3 = 0$
+		
+			$$|x^3 - 0| < \epsilon$$
+			$$|x^3| < \epsilon$$
+			$$|x - 0| < \sqrt[3]{\epsilon}$$
+			$$\delta = \sqrt[3]{\epsilon}$$
+			
+			$$\text{If } 0 < |x - 0|  < \delta \text{ then } |x - 0|^3 < \epsilon \text { so }
+			\lim \limits _{x \to 0} x^3 = 0$$
+			
+		\item $\lim \limits _{x \to 0} | x | = 0$
+		
+			So $|| x | - 0 | < \epsilon$
+			
+			 and $| x - 0 | < \epsilon$
+			
+			Therefore 
+			
+				$$ \delta = \epsilon$$
+				
+			$$\text{If } |x - 0 | < \delta \text{ then } |x - 0| < \epsilon \text{ so } ||x| - 0| < \epsilon$$
+		
+			
+		\item $\lim \limits _{x \to 9^{-}} \sqrt[4]{9 - x} = 0$
+		
+			Consider $\epsilon > 0$, arbitrary. We need to find $\delta > 0$ so that for all $9 - \delta < x < 9$
+			we have $|\sqrt[4]{9 - x}- 0| < \epsilon$.
+			
+			If we manipulate the inequality...
+			
+			$$\sqrt[4]{9 - x} < \epsilon$$
+			$$9 - x < \epsilon^{4}$$
+			$$- x < \epsilon ^{4} - 9$$
+			
+			 Multiply both sides by -1.
+			 
+			  $$9 - \epsilon^{4} < x $$ 
+			  
+			  So $9 - \delta = 9 - \epsilon^{4}$ therefore $\delta = \epsilon^{4}$.
+			  
+			  Thus for every $9 - \delta < x < 9$ there exists 
+			  
+			  $$9 - \epsilon^{4} < x $$
+			  $$ - \epsilon^{4} < x - 9$$
+			  $$ 9 - x < \epsilon^{4}$$
+			  $$\sqrt[4]{9 - x} < \epsilon$$
+			  $$|\sqrt[4]{9- x} - 0 | < \epsilon$$
+			  
+			  And so $\lim \limits _{x \to 9^{-}} \sqrt[4]{9 - x} = 0$.
 	\end{enumerate}
 \end{document}

@@ -983,5 +983,36 @@
 			  $$|\sqrt[4]{9- x} - 0 | < \epsilon$$
 			  
 			  And so $\lim \limits _{x \to 9^{-}} \sqrt[4]{9 - x} = 0$.
+			  
+		\item $\lim \limits _{x \to 3} x^2 = 9$  \emph{Hint:} Write $|x^2 - 9 | = |x + 3||x - 3|$. Show that if 
+			$|x - 3| < 1$ , then $|x + 3| < 7$. If you let $\delta$ be the smaller of the numbers 1 and 
+			$\epsilon/7$, show that this $\delta$ works.
+			
+			$$|f(x) - L | < \epsilon$$
+			$$|x^2 - 9| < \epsilon$$
+			$$|x + 3||x - 3| < \epsilon$$
+			
+			We can prove from the number line that
+			
+			$$\text{If } |x-3| < 1 \text{ then } |x| < 4 \text{ and } |x + 3| < 7$$
+		
+			So somehow $|x - 3| < 7|x + 3| < \epsilon$
+			
+			And therefore $|x + 3| < \epsilon/7$
+			
+			From this we take $\delta = min(1, \epsilon/7)$ and show that this $\delta$ works. We could 
+			try relating this back to the earlier estimation exercises where we had to choose the smaller
+			value for $\delta$.
+			
+		\item If \emph{H} is the Heaviside function defined by Example 6, prove, using Definition 4, that 
+			$\lim \limits _{t \to 0} H(t)$ does not exist. [\emph{Hint} Use an indirect proof as follows. Suppose
+			that the limit is \emph{L}. Take $\epsilon = \frac{1}{2}$ in the definition of a limit and try to arrive
+			at a contradiction.]
+			
+			$$|H(t) - L | < \frac{1}{2}$$
+			
+			The value of $H(t)$ must be 1 or 0. If $H(t) = 1$ then $\frac{1}{2} < L < \frac{3}{2}$. If
+			$H(t) = 0$ then $L < \frac{1}{2}$. THe value of $L$ cannot satisfy both these constraints.
+			
 	\end{enumerate}
 \end{document}

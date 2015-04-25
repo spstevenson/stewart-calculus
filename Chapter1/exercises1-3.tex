@@ -983,6 +983,7 @@
 			  $$|\sqrt[4]{9- x} - 0 | < \epsilon$$
 			  
 			  And so $\lim \limits _{x \to 9^{-}} \sqrt[4]{9 - x} = 0$.
+			 
 			  
 		\item $\lim \limits _{x \to 3} x^2 = 9$  \emph{Hint:} Write $|x^2 - 9 | = |x + 3||x - 3|$. Show that if 
 			$|x - 3| < 1$ , then $|x + 3| < 7$. If you let $\delta$ be the smaller of the numbers 1 and 
@@ -1003,6 +1004,27 @@
 			From this we take $\delta = min(1, \epsilon/7)$ and show that this $\delta$ works. We could 
 			try relating this back to the earlier estimation exercises where we had to choose the smaller
 			value for $\delta$.
+			
+		
+		\item Prove $\lim \limits _{x \to 3} (x ^2 + x - 4) = 8$
+		
+			If $0 < | x - 3 | < \delta$ then $|(x^2 + x - 4) - 8 | < \epsilon$
+			$$|x-3||x+4| < \epsilon$$
+			
+			If we take $\delta = 1$ then $0 < |x - 3 | < 1$ and then $|x + 4| < 8$
+			
+			$$|x - 3||x+4| < 8|x-3| < \epsilon$$
+			$$|x-3| < \frac{\epsilon}{8}$$
+			
+			Proof: Given $\epsilon > 0$, let $\delta = \text{min}\{1, \frac{\epsilon}{8}\}$
+			
+			If $0 < |x-2| < \delta$, then $|(x^2 + x -4) - 8| = |x - 3||x + 4|$
+			
+			$$< |x - 3|8$$
+			$$< (\frac{\epsilon}{8})8 = \epsilon$$
+			
+			
+			
 			
 		\item If \emph{H} is the Heaviside function defined by Example 6, prove, using Definition 4, that 
 			$\lim \limits _{t \to 0} H(t)$ does not exist. [\emph{Hint} Use an indirect proof as follows. Suppose

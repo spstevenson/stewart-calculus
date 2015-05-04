@@ -127,7 +127,74 @@
 			
 			$$(1^2 + 1)^3 (1 + 3)^5 = 2^3 4^5 = 8192$$
 			
-		\item $\lim \limits _{t \to -2} \frac{t^4 - 2}{2t^3 - 3t + 2}$
+		\item $\lim \limits _{t \to -2} \frac{t^4 - 2}{2t^2 - 3t + 2}$
+		
+			Using Limit Law 5:
+			
+			$$\frac{\lim \limits _{t \to -2} t^4 - 2}{\lim \limits _{t \to -2} 2t^2 -3t +2}$$
+		
+			Using Limit Laws 1 and 2:
+			
+			$$\frac{\lim \limits _{t \to -2} t^4 - \lim \limits _{t \to -2} 2}
+			{\lim \limits _{t \to -2} 2t^2 - \lim \limits _{t \to -2} 3t + \lim \limits _{t \to -2} 2}$$
+			
+			Using Limit Law 3:
+			
+			$$\frac{\lim \limits _{t \to -2} t^4 - \lim \limits _{t \to -2} 2}
+			{2 \lim \limits _{t \to -2} t^2 - 3 \lim \limits _{t \to -2} t + \lim \limits _{t \to -2} 2}$$
+			
+			Using Limit Law 6:
+			
+			$$\frac{[\lim \limits _{t \to -2} t]^4 - \lim \limits _{t \to -2} 2}
+			{2 [\lim \limits _{t \to -2} t]^2 - 3 \lim \limits _{t \to -2} t + \lim \limits _{t \to -2} 2}$$
+			
+			Using Limit Laws 7 and 8:
+			
+			$$\frac{(-2)^4 -  2}{2(-2)^2 - 3(-2) +  2} = \frac{16 -2}{8 + 6 + 2} = \frac{14}{16} = \frac{7}{8}$$
+			
+		\item $\lim \limits _{u \to -2} \sqrt{u^4 + 3u + 6}$
+		
+			Using Limit Law 11:
+			
+			$$\sqrt{\lim \limits _{u \to -2} u^4 + 3u +6}$$
+			
+			Using Limit Laws 1 and 2:
+			
+			$$\sqrt{\lim \limits _{u \to -2} u^4 + \lim \limits _{u \to -2} 3u + \lim \limits _{u \to -2} 6}$$
+			
+			Using Limit Laws 3 and 6:
+			
+			$$\sqrt{[\lim \limits _{u \to -2} u]^2 + 3 \lim \limits _{u \to -2} u + \lim \limits _{u \to -2} 6}$$
+			
+			Using Limit Laws 7 and 8:
+			
+			$$\sqrt{(-2) ^2 + 3(-2) + 6} = \sqrt{4 - 6 + 6} = 2$$
+			
+		\item $\lim \limits _{x \to 8} ( 1 + \sqrt[3]{x})(2 - 6x^2 + x^3)$
+		
+		Using Limit Law 4:
+		
+			$$\lim \limits _{x \to 8} (1 + \sqrt[3]{x}) \cdot \lim \limits _{x \to 8} (2 -6x^2 + x^3)$$
+			
+		Using Limit Laws 1 and 2:
+		
+			$$(\lim \limits _{x \to 8} 1 + \lim \limits _{x \to 8} \sqrt[3]{x}) \cdot 
+				(\lim \limits _{x \to 8} 2 - \lim \limits _{x \to 8} 6x^2 + \lim\limits _{x \to 8} x^3)$$
+				
+		Using Limit Law 3:
+				
+			$$(\lim \limits _{x \to 8} 1 + \lim \limits _{x \to 8} \sqrt[3]{x}) \cdot 
+				(\lim \limits _{x \to 8} 2 - 6 \lim \limits _{x \to 8} x^2 + \lim\limits _{x \to 8} x^3)$$
+				
+		Using Limit Laws 6 and 11:
+		
+			$$(\lim \limits _{x \to 8} 1 +  \sqrt[3]{\lim \limits _{x \to 8} x}) \cdot 
+				(\lim \limits _{x \to 8} 2 - 6 [\lim \limits _{x \to 8} x]^2 + [\lim\limits _{x \to 8} x]^3)$$
+				
+		Using Limit Laws 7 and 8:
+		
+			$$( 1 +  \sqrt[3]{8}) \cdot 
+				( 2 - 6(8)^2 + (8)^3) = 3 \cdot 130 = 390$$		
 		
 	\end{enumerate}
 \end{document}

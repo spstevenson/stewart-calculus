@@ -224,5 +224,89 @@
 			
 			$$\pi /2 \cdot 1= \frac{\pi}{2}$$
 		
+		\item{}
+
+		\begin{enumerate}
+			\item What is wrong with the following equation?
+
+			$$\frac{x^2 + x - 6}{x-2} = x + 3$$
+
+			In this equation the left hand side is undefined when $x=2$, whereas
+			the right hand side is defined.
+
+			\item In view of part (a), explain why the equation
+
+			$$\lim \limits _{x \to 2} \frac{x^2 + x - 6}{x-2} = \lim \limits _{x \to 2} (x+3)$$
+
+			is correct.
+
+			This is correct as $\lim \limits _{x \to a} g(x) = \lim \limits _{x \to a} f(x)$ when $f(x) = g(x)$
+			except at $a$.
+		\end{enumerate}
+
+		\item[11-28] Evaluate the limit, if it exists.
+
+		\item $\lim \limits _{x \to 5} \frac{x^2-6x+5}{x-5}$
+
+		$$\lim \limits _{x \to 5} \frac{x^2-6x+5}{x-5} = \lim \limits _{x \to 5} \frac{(x-1)(x-5)}{x-5}$$
+		$$ = \lim \limits _{x \to 5} x-1$$
+
+		So the limit of $\lim \limits _{x \to 5} x - 1 = -4$ by the Direct Substitution Principle.
+
+		\item $\lim \limits _{x \to -4} \frac{x^2 + 5x + 4}{x^2 + 3x - 4}$
+
+		Factorising...
+
+		$$\lim \limits _{x \to -4} \frac{(x+1)(x+4)}{(x+4)(x-1)} = \lim \limits _{x \to -4} \frac{x+1}{x-1}$$
+
+		From the Direct Substitution Principle $\lim \limits _{x \to -4} \frac{x+1}{x-1} = \frac{3}{5}$.
+
+		\item $\lim \limits _{x \to 5} \frac{x^2 - 5x + 6}{x-5}$
+
+		If we factorise this we get...
+
+		$$\lim \limits _{x \to 5} \frac{(x-2)(x-3)}{x-5}$$
+
+		So this limit does not exist.
+
+		\item $\lim \limits _{x \to -1} \frac{x^2 - 4x}{x^2 - 3x - 4}$
+
+		This factorises to...
+
+		$$\lim \limits _{x \to -1} \frac{x(x - 4)}{(x-4)(x+1)} = \lim \limits _{x \to -1} \frac{x}{x+1}$$
+
+		So this limit does not exist.
+
+		\item $\lim \limits _{t \to -3} \frac{t^2 - 9}{2t^2 + 7t + 3}$
+
+		This factorises to
+
+		$$\lim \limits _{t \to -3} \frac{(t+3)(t-3)}{(t+3)(2t+1)}$$
+
+		$$\lim \limits _{t \to -3} \frac{t-3}{2t+1}$$
+
+		By the direct substitution principle the limit is $\frac{6}{5}$.
+
+		\item $\lim \limits _{x \to -1} \frac{2x^2 + 3x + 1}{x^2 - 2x -3}$
+
+		If we factorise...
+
+		$$\lim \limits _{x \to -1} \frac{(2x+1)(x+1)}{(x-3)(x+1)}$$
+
+		$$\lim \limits _{x \to -1} \frac{2x+1}{x-3}$$
+
+		By direct substitution this ends up as $\frac{1}{5}$.
+
+		\item $\lim \limits _{h \to 0} \frac{(-5 + h)^2 - 25}{h}$
+
+		If we expand the binomial...
+
+		$$\lim \limits _{h \to 0} \frac{h^2 - 10h + 25 - 25}{h}$$
+
+		$$\lim \limits _{h \to 0} \frac{h^2 -10h}{h}$$
+
+		$$\lim \limits _{h \to 0} h - 10 = -10$$
+		
 	\end{enumerate}
+
 \end{document}

@@ -463,6 +463,80 @@
 			$$|x| = x \text{ if } x\geq 0, -x \text{ if } x < 0$$
 
 			$$\lim \limits _{x \to -2} \frac{2-(-x)}{2+x} = \frac{2+x}{2+x} = 1$$
+
+		\item $\lim \limits _{x \to 0^{+}} (\frac{1}{x} - \frac{1}{|x|}$
+
+			If $x \geq 0$ then$|x| = x$ so
+
+			$$\lim \limits _{x \to 0^{+}} (\frac{1}{x}-\frac{1}{x}) = 0$$
+
+		\item Let $g(x)=\frac{x^2+x-6}{|x-2|}$
+
+		\begin{enumerate}
+
+			\item Find
+
+			\begin{enumerate}
+			
+				\item $\lim \limits _{x \to 2^{+}} g(x)$
+
+				$$\frac{x^2+x-6}{|x-2|} = \frac{(x+3)(x-2)}{|x-2|}$$
+
+				If $x > 2$ then $|x-2| = x-2$
+
+				$$\lim \limits _{x \to 2^{+}} \frac{(x+3)(x-2)}{x-2}$$
+
+				$$\lim \limits _{x \to 2^{+}} x+3 = 5$$
+
+			\end{enumerate}
+		\end{enumerate}		
+
+		\item
+
+		\begin{enumerate}
+
+			\item If the symbol $[[]]$ denotes the greatest integer function
+				defined in Example 8, evaluate
+
+			\begin{enumerate}
+				\item $\lim \limits _{x \to -2^{+}} [[x]]$
+
+				Since $[[x]] = -2 \text{ for } -2 \geq x < -1$ then
+
+				$$\lim \limits _{x \to -2^{+}} [[x]] = -2$$
+
+				\item $\lim \limits _{x \to -2} [[x]]$
+
+				We need to work out the left hand limit.
+
+				Because $[[x]] = -3 \text{ for } -3 \leq x < -2$
+
+				$$\lim \limits _{x \to -2^{-}} [[x]] = -3$$
+
+				Because the left hand limit is not equal to the right hand limit
+				the limit does not exist.
+
+				\item $\lim \limits _{x \to -2.4} [[x]]$
+
+				First we do the left hand limit.
+
+				$$\lim \limits _{x \to -2.4^{-} [[x]]$$
+
+				Because $[[x]]=-3$ when $-2.6 \leq x < -2.4$
+
+				$$\lim \limits _{x \to -2.4^{-}} [[x]] = -3$$
+
+				The right hand limit
+
+				$$\lim \limits _{x \to -2.4^{+}} [[x]]$$
+
+				Because $[[x]] = -3$ when $-2.4 \leq x < 2.2$
+
+				$$\lim \limits _{x \to -2.4^{+}} [[x]] = -3$$
+
+				so $\lim \limits _{x \to -2.4} [[x]]=-3$
+			\end{enumerate}
+		\end{enumerate}
 		
 	\end{enumerate}
 

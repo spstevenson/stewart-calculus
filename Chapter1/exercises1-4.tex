@@ -438,6 +438,7 @@
 
 			Let's work out the right handed limit
 
+
 			$$\lim \limits _{x \to -6^{+}} \frac{2(x+6)}{x+6} = 2$$
 
 			Working out the left handed limit
@@ -536,7 +537,63 @@
 
 				so $\lim \limits _{x \to -2.4} [[x]]=-3$
 			\end{enumerate}
+
 		\end{enumerate}
+		\item In the theory of relativity, the Lorentz contraction formula
+
+			$$L = L_{0}\sqrt{1 - v^2/c^2}$$
+
+			expresses the length $L$ of an object as a function of its
+			velocity $v$ with respect to an observer, where $L_{0}$ is the
+			length of the object at rest and $c$ is the speed of light. Find
+			$\lim _{v \to c^{-}} L$ and interpret the result. Why is the left-
+			hand limit necessary?
+
+			We can get this left-hand limit via direct substitution.
+
+			$$\lim \limits _{L \to c^{-}} L_{0}\sqrt{1 - v^2/c^2}$$
+
+			$$L_{0}\sqrt{1-c^2/c^2} = L_{0} \sqrt{1 - 1} = 0$$
+
+			We can see from the limit as $v$ tends to $c$, the length of the
+			object approaches zero. We must take the left-handed limit as the
+			speed of light $c$ cannot be reached or exceeded.
+
+		\item[49-56]
+
+		\item $$\lim \limits _{t \to 0} \frac{\sin^2 3t}{t^2}$$
+
+			We can split the power into it's two parts.
+
+			$$\frac{\sin 3t}{t} \times \frac{\sin 3t}{t}$$
+
+			And multiply each part by three over three.
+
+			$$\frac{\sin3t}{3t} \times \frac{\sin 3t}{3t} \times \frac{9}{1}$$
+
+			Using the fact that $\lim \limits _{\theta \to 0} \frac{\sin \theta}{\theta}  = 1$ the limit
+			is 9.
+
+		\item $\lim \limits _{x \to 0} \frac{\sin 3x}{5x^3 - 4x}$
+
+			First we can factor the denominator and express as two fractions.
+
+			$$\lim \limits _{x \to 0} \frac{\sin 3x}{x} \times \frac{1}{5x^2 - 4}$$
+
+			Then multiply by $\frac{3}{3}$.
+
+			$$\lim \limits _{x \to 0} \frac{\sin 3x}{3x} \times \frac{3}{5x^2 - 4} = -\frac{3}{4}$$
+
+		\item $\lim \limits _{x \to 0} \frac{\sin 3x \sin 5x}{x^2}$
+
+			First we can split into two different fractions.
+
+			$$\lim \limits _{x \to 0} \frac{\sin3x}{x} \frac{\sin5x}{x}$$
+
+			And multiply by $\frac{3}{3} \frac{5}{5}$.
+
+			$$\lim \limits _{x \to 0} \frac{3\sin 3x}{3x} \frac{5 \sin 5x}{5x} = 3 \times 5 = 15$$
+			
 		
 	\end{enumerate}
 

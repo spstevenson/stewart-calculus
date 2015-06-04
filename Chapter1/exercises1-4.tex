@@ -607,7 +607,66 @@
 			$$\lim \limits _{x \to 0} x \frac{\sin{x^2}}{x^2} = 0$$
 
 			
+		\item If $p$ is a polynomial, show that $\lim _{x \to a} p(x) = p(a)$
+
+			Let's look at the general form of a limit polynomial.
+
+			$$\lim \limits _{x \to a} b_{n}x^{n} + b_{n-1}x^{n-1} + ... + b_{0}$$
+
+			We can use the limit laws to show this, starting with Limit Law 1.
+
+			$$\lim \limits _{x \to a} b_{n}x^{n} + \lim \limits _{x \to a} b_{n-1}x^{n-1} + ... + \lim \limits _{x \to a} b_{0}$$
+
+			From Limit Law 3:
+
+			$$b_{n} \lim \limits _{x \to a} x^{n} + b_{n-1} \lim \limits _{x \to a} x^{n-1} + ... + \lim \limits _{x \to a} b_{0}$$
+
+			From Limit Law 6:
 			
+			$$b_{n} [\lim \limits _{x \to a} x]^{n} + b_{n-1} [\lim \limits _{x \to a} x ]^{n-1} + ... + \lim \limits _{x \to a} b_{0}$$
+
+			Finally from limit laws 7 and 8:
+
+			$$b_{n} a^{n} + b_{n-1} a^{n-1} + ... + b_{0}$$
+
+		\item If $r$ is a rational function, use Exercise 57 to show that
+			$\lim _{x \to a} r(x) = r(a)$ for every function in the domain of $r$.
+
+			A rational function is of the form $\frac{f(x)}{g(x)}$ where $f$ and $g$
+			are polynomial functions. So we are trying to find the limit of...
+
+			$$\lim \limits _{x \to a} \frac{f(x)}{g(x)}$$
+
+			We can of course use limit law 5.
+
+			$$\frac{\lim \limits _{x \to a} f(x)}{\lim \limits _{x \to a} g(x)}$$
+
+			Because $f$ and $g$ are polynomials we showed in the last exercise that
+			for a polynomial $\lim _{x \to a} p(x) = p(a)$.
+
+			And so...
+
+			$$\frac{\lim \limits _{x \to a} f(x)}{\lim \limits _{x \to a} g(x)} = \frac{f(a)}{g(a)}$$
+
+		\item To prove that sine has the Direct Substitution Property we need to show
+			that $\lim _{x \to a} \sin x = \sin a$ for every number $a$. If we
+			let $h = x - a$, then $x = a + h$ and $x \to a \Leftrightarrow h \to 0$.
+			So an equivalent statement is that
+
+			$$ \lim \limits _{h \to 0} \sin(a+h) = \sin a$$
+
+			Use 1 to show that this is true.
+
+			We can use the trigonmetric identity to expand this out.
+
+			$$\lim \limits _{h \to 0} \sin a \cos h + \sin h \cos a$$
+
+			From 1 we know that $\lim \limits _{\theta \to 0} \cos \theta = 1$
+			and $\lim \limits _{\theta \to 0} \sin \theta = 0$.
+
+			So...
+
+			$$1 \times \sin a + 0 \times \cos a = \sin a$$
 		
 	\end{enumerate}
 

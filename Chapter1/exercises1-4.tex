@@ -689,6 +689,64 @@
 		So...
 
 		$$\cos a \times 1 - \sin a \times 0 = \cos a$$
+
+		\item If $\lim \limits _{x \to 1} \frac{f(x)-8}{x-1} = 10$, find $\lim \limits _{x \to 1} f(x)$
+
+			We can do this by rearranging the limit to remove the awkward denominator.
+	
+			$$\lim \limits _{x \to 1} f(x) - 8 = 10(x -1)$$
+
+			$$\lim \limits _{x \to 1} f(x) = 10x - 2$$
+
+			$$\lim \limits _{x\to 1} f(x) - 10x = -2$$
+
+			Using the limit laws.
+
+			$$\lim \limits _{x\to 1} f(x) - \lim \limits _{x \to 1} 10x = -2$$
+
+			$$[\lim \limits _{x \to 1} f(x)] -10 = -2$$
+
+			$$\lim \limits _{x \to 1} f(x) = 8$$
+
+		\item Prove that if $\lim _{x \to a} g(x) = 0$ and $\lim _{x \to a} f(x)$ exists and is not
+			0, then
+
+			$$\lim \limits _{x \to a} \frac{f(x)}{g(x)} \text{ does not exist}$$
+
+			From limit law 5:
+
+			$$\frac{\lim \limits _{x \to a} f(x)}{\lim \limits _{x \to a} g(x)}$$
+
+			If $\lim \limits _{x \to a} f(x) = m$ and $\lim \limits _{x \to a} g(x) = 0$
+			then
+
+			$$\frac{m}{0}$$
+
+			Which is undefined.
+
+		\item Is there a number $a$ such that
+
+			$$\lim \limits _{x \to -2} \frac{3x^2 + ax +a +3}{x^2 + x - 2}$$
+
+			exists? If so, find the value of $a$ and the value of the limit.
+
+			If we factorise the denominator...
+
+			$$\lim \limits _{x \to -2} \frac{3x^2 + ax + a + 3}{(x+2)(x-1)}$$
+
+		So we need an $a$ such that $(x+2)$ is a factor of $(3x^2 + ax + a +3)$
+
+			If we take $a = 15$ then
+
+			$$\lim \limits _{x \to -2} \frac{3x^2 15x + 18}{(x+2)(x-1)}$$	
+
+			$$\lim \limits _{x \to -2} \frac{3(x^2 +5x + 6}{(x+2)(x-1)}$$
+
+			$$\lim \limits _{x \to -2} \frac{3(x+2)(x+3)}{(x+2)(x-1)}$$
+
+			$$\lim \limits _{x \to -2} \frac{3(x+3)}{x-1}$$
+
+			$$\frac{3}{-3} = -1$$
 		
 	\end{enumerate}
 

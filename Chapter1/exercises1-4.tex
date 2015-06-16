@@ -747,7 +747,101 @@
 			$$\lim \limits _{x \to -2} \frac{3(x+3)}{x-1}$$
 
 			$$\frac{3}{-3} = -1$$
+
+		\item The figure shows a fixed circle $C_1$ with equation $(x-1)^2 + y^2 = 1$
+			and a shrinking circle $C_2$ with radius $r$ and centre the origin. $P$
+			is the point $(0, r), Q$ is the upper point of intersection of the two
+			circles, and $R$ is the point of intersection of the line $PQ$ and the
+			$x$-axis. What happens to $R$ as $C_2$ shrinks, that is, as $r \to 0^{+}$?
+
+			The equation of a straight line is.
+
+			$$y = mx + c$$
+
+			If we rearrange for $x$.
+
+			$$x = \frac{y - c}{m}$$
+
+			When $y = 0, x = R$ so
+
+			$$R = - \frac{r}{m}$$
+
+			The intercept $c$ is equal to the radius $r$ of $C_{2}$ so
+
+			$$R = = \frac{r}{m}$$
+
+			So we need to find
+
+			$$\lim \limits _{r \to 0^{+}} - \frac{r}{m}$$
+
+			We need to find an expression for $m$ in terms of $r$.
+
+			The gradient of a straight line is
+
+			$$m \frac{y_1 - y_2}{x_1 - x_2}$$
+
+			Let $P = (x_1,y_1)$, we know $y_1 = r$ and $x_1 = 0$ so
+
+			$$m = \frac{r - y_2}{-x_2}$$
+
+			Substituting for $m$ in out original limit.
+
+			$$\lim \limits _{r \to 0^{+}} - \frac{r}{(\frac{r-y_2}{-x_2}}$$
+
+			$$\lim \limits _{r \to 0^{+}} - \frac{r(-x_2)}{r - y_2}$$
+
+			$$\lim \limits _{r \to 0^{+}} = \frac{r x_2}{y_2 - r}$$
+
+			So we need to find the interception point $Q$ in terms of 
+			$r$ to find $(x_2, y_2)$
+
+
+			The equations for the two circles are
+
+			$$x^2 + y^2 = r^2$$
+
+			$$(x-1)^2 + y^2 = 1$$
+
+			Finding $x$
+
+			$$x^2 +y^2 - r^2 = 0 \text{ and } (x-1)^2 + y^2 - 1 = 0$$
+
+			so
+
+			$$(x-1)^2 + y^2 - 1 - x^2 - y^2 + r^2 = 0$$
+
+			$$(x-1)^2 - x^2 = 1 - r^2$$
+
+			$$x^2 - 2x + 1 - x^2 = 1 - r^2$$
+
+			$$r^2 = 2x$$
+
+			$$x_2 = \frac{r^2}{2}$$
+
+			From the general equation of a circle
+
+			$$y^2 = r^2 - x^2$$
+
+			$$y^2 = r^2 - \frac{r^2}{2} = \frac{r^2}{2}$$
+
+			$$y_2 = \sqrt{\frac{r^2}{2}} = r \sqrt{\frac{1}{2}}$$
+
+			Let's plug these into our equation for $m$
 		
+			$$\frac{r \frac{r^2}{2}}{r\sqrt{\frac{1}{2}} - r}$$
+
+			$$\frac{r^3}{2r(\sqrt{\frac{1}{2}} - 1)}$$
+
+			$$m = \frac{r^2}{2(\sqrt{\frac{1}{2} - 1}}$$
+
+			Now we can plug $m$ into our equation for $R$...
+
+			$$\lim \limits _{r \to 0^{+}} - \frac{2(\sqrt{\frac{1}{2}} - 1)}{r}$$
+
+			This shows that the limit of $R$ as $r \to 0^{+}$ does not exist. If we
+			experiment graphically with the geometry we can see that $R$ approaches
+			infinity.
+
 	\end{enumerate}
 
 \end{document}

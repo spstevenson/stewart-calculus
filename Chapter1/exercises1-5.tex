@@ -1,4 +1,142 @@
 \documentclass{article}
 
+\renewcommand{\thesection}{} % Remove section numbers
+\usepackage{amsmath}
+
 \begin{document}
+
+	\section{1.5 Continuity}
+
+	\begin{enumerate}
+		\item Write an equation that expresses the fact that a function $f$
+			is continuous at the number 4.
+
+			$$\lim \limits _{a \to 4} f(x) = f(a)$$
+
+		\item If $f$ is continuous on $(-\infty, \infty)$, what can you
+			say about its graph?
+
+			There are no vertical asymptotes, jumps in value or
+			undefined values in the graph.
+
+		\item Explain why each function is continuous or discontinuous.
+
+			\begin{enumerate}
+				\item The temperature at a specific location as
+					a function in time.
+
+					The function is continuous as the temperature
+					in a location cannot jump in value without passing
+					through the intermediate values.
+
+				\item The temperature at a specific time as a function of
+					the distance due west from Paris.
+
+					As before, the temperature cannot jump without passing
+					through the intermediate values so this function is
+					continuous.
+
+				\item The altitude above sea level as a function of the distance
+					due west from Paris.
+
+					The altitude cannot jump without passing through the 
+					intermediate values so this function is continuous.
+
+				\item The cost of a taxi ride as a function of the distance travelled.
+
+					Because at best the cost will be in 1p "jumps" (and is more often
+					than not in 10-20p jumps) this function is discontinuous.
+
+				\item The current in the circuit for the lights in a room as a function of
+					time.
+
+					The Heaviside function models the current in a circuit as a function
+					of time. This function is discontinuous as for all practical purposes
+					the current jumps from zero to its final value without passing though
+					the intermediate values when the lights are switched on.
+			\end{enumerate}
+
+			\item Suppose $f$ and $g$ are continuous functions such that $g(2) = 6$
+				and $\lim \limits _{x \to 2} [3f(x) + f(x)g(x)] = 36$. Find $f(2)$.
+
+				Let's use our limit laws to prepare the equation.
+
+				$$\lim \limits _{x \to 2} 3f(x) + \lim \limits _{x \to 2} f(x)g(x) = 36$$
+				$$3\lim \limits _{x \to 2} f(x) + [\lim \limits _{x to 2} f(x)][\lim \limits _{x \to 2} g(x)] = 36$$
+
+				Because $g$ is continuous $\lim \limits _{x \to 2} g(x) = g(2) = 6$
+
+				$$3\lim \limits _{x \to 2} f(x) + 6\lim \limits _{x \to 2} f(x) = 36$$
+				$$9\lim \limits _{x \to 2} f(x) = 36$$
+				$$\lim \limits _{x \to 2} f(x) = 4$$
+
+				Because $f$ is continuous $\lim \limits_{x \to 2} f(x) = f(2) = 4$	
+
+			\item[12-13] Use the definition of continuity and the properties of limits
+					to show that the function is continuous at the given
+					number $a$.
+
+			\item $f(x) = 3x^4 - 5x +\sqrt[3]{x^2 + 4}, a = 2$
+
+				\begin{enumerate}
+					\item $f(a)$ is defined (that is, $a$ is in the domain of $f$)
+
+					$f(2)$ is defined.
+
+					$$3(2)^2 - 5(2) + \sqrt[3]{(2)^2 + 4} = 12 - 10 + 2 = 4$$
+
+					\item $\lim \limits _{x \to 2} f(2)$ exists.
+
+					$$3[\lim \limits _{x \to 2} f(2)]^2 - 5\lim \limits _{x \to 2} \sqrt[3]{\lim \limits _{x \to 2} f(x)}$$
+
+					%TODO: Finish this...
+				\end{enumerate}
+
+			\item $f(x) = (x + 2x^3)^4, a = -1$
+
+				$f(a)$ is defined as...
+
+				$$(-1 + 2(-1)^3)^4 = (-3)^4 = 81$$
+
+				The limits exist...
+
+				$$\lim \limits _{x \to -1} (x + 2x^3)^4 ...$$
+
+				$$\lim \limits _{a to -1} f(a) = f(-1)$$ 
+
+				%TODO: Finish this...
+
+			\item Use the definition of continuity and the properties of
+				limits to show that the function $f(x) = x\sqrt{16 - x^2}$
+				is continuous on the interval $[-4,4]$.	
+
+				We take $-4 \leq a \leq 4$.
+
+				$$\lim \limits _{a \to x} x\sqrt{16 - x^2}$$
+
+				$$[\lim \limits _{a \to x} x ] \dot [\lim \limits _{a \to x } \sqrt{16 - x^2}$$
+
+				$$[\lim \limits _{a \to x} x] \cdot \sqrt{  \lim \limits _{a \to x} (16-x^{2})}$$
+
+				$$[\lim \limits _{a \to x} x] \cdot \sqrt{ \lim \limits _{a \to x} 16 - \lim \limits _{a \to x} x^{2}}$$
+				
+				$$ a \sqrt{16 - a^2}$$
+
+				So $\lim \limits {x \to a} f(x) = f(a)$
+
+			\item[15-18] Explain why the function is discontinuous at the
+				the given number $a$.
+
+			\item[19-24] Explain, using Theorems 4,5,6 and 8, why the function
+				is continuous at every number in its domain. State the domain.
+
+			\item $F(x) = \frac{2x^2 - x - 1}{x^2 + 1}$
+
+				By Theorem 5 any rational function is continuous wherever
+				it is defined. Because $x^2 + 1$ has no real roots the
+				domain is $(-\infty, \infty)$.
+				
+			\item $G(x) = \sqrt[3]{x}(1+x^2)$
+
+	\end{enumerate}
 \end{document}

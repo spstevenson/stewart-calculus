@@ -197,7 +197,59 @@
 			From theorem 8 we know that a continuous function of a continuous function
 			is continuous, so $\sin(\cos(\sin x))$ is continuous.
 
-			
+			\item[25-26] Locate the discontinuities of the function and illustrate by
+			graphing.
+
+			\item $y = \frac{1}{1 + \sin x}$
+
+			\item $y = \tan \sqrt{x}$
+
+			\item[27-28] Use continuity to evaluate the limit.			
+
+			\item $\lim \limits _{x \to 4} \frac{5 + \sqrt{x}}{\sqrt{5 + x}}$
+
+			$$\lim \limits _{x \to 4} \frac{5 + \sqrt{x}}{\sqrt{5 + x}} = 
+				\frac{\lim \limits _{x \to 4} 5 + \sqrt{x}}{\lim \limits _{x \to 4} \sqrt{5 + x}}$$
+
+			Taking the numerator and limit law 1...
+
+			$$\lim \limits _{x \to 4} 5 + \sqrt{x} = \lim \limits _{x \to 4} 5 + \lim \limits _{x \to 4} \sqrt{x}$$
+
+			$$\lim \limits _{x \to 4} 5 +\sqrt{\lim \limits _{x \to 4} x} = 5 + \sqrt{4} = 7$$
+
+			For the denominator we have...
+
+			$$\lim \limits _{x \to 4} \sqrt{5 + x}$$
+
+			From theorem 7 $\lim \limits _{x \to a} f(g(x)) = f(\lim \limits _{x \to a} g(x))$, so
+
+			$$\lim \limits _{x \to 4} \sqrt{5 + x} = \sqrt{\lim \limits _{x \to 4} 5 + x}$$
+
+			$$\sqrt{\lim \limits _{x \to 4} 5 + x } = \sqrt{\lim \limits _{x \to 4} 5 + \lim \limits _{x \to 4} x}
+				= \sqrt{5 + 4} = \sqrt{9}  = 3$$
+
+			So putting everything together...
+
+			$$\lim \limits _{x \to 4} \frac{5 + \sqrt{x}}{\sqrt{5 + x}} = \frac{7}{3}$$
+
+			\item $\lim \limits _{x \to \pi} \sin (x + \sin x)$
+
+			From theorem 7 
+
+			$$\lim \limits _{x \to \pi} \sin (x + \sin x) = \sin (\lim \limits _{x \to \pi} x + \sin x)$$
+
+			We can then apply the standard limit laws...
+
+			$$\sin (\lim \limits _{x \to \pi} x + \lim \limits _{x \to \pi} \sin x$$
+
+			Because $\sin$ obeys the direct substition principle 
+
+			$$\lim \limits _{x \to \pi} x + \lim \limits _{x \to \pi} \sin x 
+				= \pi + 0 = \pi$$
+
+			We plug this into sin...
+		
+			$$\sin \pi = 0$$
 
 	\end{enumerate}
 \end{document}

@@ -251,5 +251,94 @@
 		
 			$$\sin \pi = 0$$
 
+			\item[29-30] Show that $f$ is continuous on $(-\infty, \infty)$.
+
+			\item $f(x) = 
+				\begin{cases}
+					x^2 & \text{if } x < 1 \\
+					\sqrt{x} & \text{if } x \geq 1
+				\end{cases}$ 
+
+				We know that this function is continuous from $(1, \infty)$ as the root
+				function is continuous. We also know the function is continuous from
+				$(-\infty, 1)$ as polynomials are continuous so we just need to prove that
+				this function is continuous at 1.
+
+				We need to find $\lim \limits _{x \to 1} f(x)$. We will do this by finding the
+				limit from the left and the right.
+
+				Limit from the left...
+
+				$$\lim \limits {x \to 1^{-}} x^2 = 1$$
+				
+
+				Limit from the right...
+
+				$$\lim \limits {x \to 1^{+}} \sqrt{x} = 1$$
+
+				Because $\lim \limits _{x \to 1^{-}} f(x) = \lim \limits _{x \to 1^{+}} f(x) = 1$
+				, $\lim \limits _{x \to 1} f(x) = 1$
+
+				$$f(1) = 1$$
+
+				So $\lim \limits _{x \to 1} f(x) = f(1) = 1$ and is continuous.
+
+			\item $f(x) =
+				\begin{cases}
+					\sin x & \text{if } x < \pi/4 \\
+					\cos x & \text{if } x \geq \pi/4
+				\end{cases}$
+
+				
+				Both $\sin x$ and $\cos x$ are continuous trigonometric functions.
+				Thus we know this function is continuous across the interval
+				$(-\infty, \pi/4) \cup (\pi/4, \infty)$.
+
+				If we show that this function is continuous at $\pi/4$ then we show
+				the function is continuous.
+
+				We need to calculate the limit from the left and the right hand side.
+				This is easy as the trigonometric functions obey the direct substitution
+				principle.
+
+				$$\lim \limits _{x \to \pi/4^{-}} \sin x = \frac{\sqrt{2}}{2}$$
+				$$\lim \limits _{x \to \pi/4^{+}} \cos x = \frac{\sqrt{2}}{2}$$
+
+
+				$$\lim \limits _{x\to \pi/4^{-}} f(x) = \lim \limits _{x \to \pi/4^{+}} f(x)$$
+
+				So
+
+				$$\lim \limits _{x \to \pi/4} f(x) = \frac{\sqrt{2}}{2}$$
+
+				$$f(\pi/4) = \frac{\sqrt{2}}{2}$$
+
+				Because $\lim \limits _{x \to \pi/4} f(x) = f(\pi/4)$ the function is continuous.
+
+			\item Find the numbers at which the function 
+
+				$$f(x) =
+					\begin{cases}
+						x + 2 & \text{if } x < 0 \\
+						2x^2 & \text{if } 0 \leq x \leq 1 \\
+						2 - x & \text{if } x > 1
+					\end{cases}$$
+
+			is discontinuous. At which of these points is $f$ continuous from the right, from the left,
+			or neither? Sketch the graph of $f$.
+
+			%TODO: Complete Q31
+
+			\item The gravitational force exerted by the earth on a unit mass at a distance $r$ from the
+			centre of the planet is
+
+				$$F(r) = 
+					\begin{cases}
+						\frac{GMr}{R^3} & \text{if } r < R \\
+						\frac{GM}{r^2} & \text{if } r \geq R
+					\end{cases}$$	
+
+			where $M$ is the mass of the earth, $R$ is its radius, and $G$ is the gravitational constant.
+			Is $F$ a continuous function of $r$?
 	\end{enumerate}
 \end{document}

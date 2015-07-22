@@ -340,5 +340,17 @@
 
 			where $M$ is the mass of the earth, $R$ is its radius, and $G$ is the gravitational constant.
 			Is $F$ a continuous function of $r$?
+
+			First we need to work out the left and right hand limits.
+
+			$$\lim \limits _{r \to R^{-}} \frac{GMr}{R^3} = \frac{GMR}{R^3} = \frac{GM}{R^2}$$
+
+			$$\lim \limits _{r \to R^{+}} \frac{GM}{r^2} = \frac{GM}{R^2}$$
+
+			so $\lim \limits _{r \to R} F(r) = \frac{GM}{R^2}$.
+
+			$$F(R) = \frac{GM}{R^2}$$
+
+			As $\lim \limits _{r \to R} F(r) = F(R)$, the function is continuous.	
 	\end{enumerate}
 \end{document}

@@ -274,5 +274,323 @@
 						2x - a + b & \text{if } x \geq 3
 					\end{cases}$$
 
+			\item[29-30] Show that $f$ is continuous on $(-\infty, \infty)$.
+
+			\item $f(x) = 
+				\begin{cases}
+					x^2 & \text{if } x < 1 \\
+					\sqrt{x} & \text{if } x \geq 1
+				\end{cases}$ 
+
+				We know that this function is continuous from $(1, \infty)$ as the root
+				function is continuous. We also know the function is continuous from
+				$(-\infty, 1)$ as polynomials are continuous so we just need to prove that
+				this function is continuous at 1.
+
+				We need to find $\lim \limits _{x \to 1} f(x)$. We will do this by finding the
+				limit from the left and the right.
+
+				Limit from the left...
+
+				$$\lim \limits {x \to 1^{-}} x^2 = 1$$
+				
+
+				Limit from the right...
+
+				$$\lim \limits {x \to 1^{+}} \sqrt{x} = 1$$
+
+				Because $\lim \limits _{x \to 1^{-}} f(x) = \lim \limits _{x \to 1^{+}} f(x) = 1$
+				, $\lim \limits _{x \to 1} f(x) = 1$
+
+				$$f(1) = 1$$
+
+				So $\lim \limits _{x \to 1} f(x) = f(1) = 1$ and is continuous.
+
+			\item $f(x) =
+				\begin{cases}
+					\sin x & \text{if } x < \pi/4 \\
+					\cos x & \text{if } x \geq \pi/4
+				\end{cases}$
+
+				
+				Both $\sin x$ and $\cos x$ are continuous trigonometric functions.
+				Thus we know this function is continuous across the interval
+				$(-\infty, \pi/4) \cup (\pi/4, \infty)$.
+
+				If we show that this function is continuous at $\pi/4$ then we show
+				the function is continuous.
+
+				We need to calculate the limit from the left and the right hand side.
+				This is easy as the trigonometric functions obey the direct substitution
+				principle.
+
+				$$\lim \limits _{x \to \pi/4^{-}} \sin x = \frac{\sqrt{2}}{2}$$
+				$$\lim \limits _{x \to \pi/4^{+}} \cos x = \frac{\sqrt{2}}{2}$$
+
+
+				$$\lim \limits _{x\to \pi/4^{-}} f(x) = \lim \limits _{x \to \pi/4^{+}} f(x)$$
+
+				So
+
+				$$\lim \limits _{x \to \pi/4} f(x) = \frac{\sqrt{2}}{2}$$
+
+				$$f(\pi/4) = \frac{\sqrt{2}}{2}$$
+
+				Because $\lim \limits _{x \to \pi/4} f(x) = f(\pi/4)$ the function is continuous.
+
+			\item Find the numbers at which the function 
+
+				$$f(x) =
+					\begin{cases}
+						x + 2 & \text{if } x < 0 \\
+						2x^2 & \text{if } 0 \leq x \leq 1 \\
+						2 - x & \text{if } x > 1
+					\end{cases}$$
+
+			is discontinuous. At which of these points is $f$ continuous from the right, from the left,
+			or neither? Sketch the graph of $f$.
+
+			%TODO: Complete Q31
+
+			\item The gravitational force exerted by the earth on a unit mass at a distance $r$ from the
+			centre of the planet is
+
+				$$F(r) = 
+					\begin{cases}
+						\frac{GMr}{R^3} & \text{if } r < R \\
+						\frac{GM}{r^2} & \text{if } r \geq R
+					\end{cases}$$	
+
+			where $M$ is the mass of the earth, $R$ is its radius, and $G$ is the gravitational constant.
+			Is $F$ a continuous function of $r$?
+
+			First we need to work out the left and right hand limits.
+
+			$$\lim \limits _{r \to R^{-}} \frac{GMr}{R^3} = \frac{GMR}{R^3} = \frac{GM}{R^2}$$
+
+			$$\lim \limits _{r \to R^{+}} \frac{GM}{r^2} = \frac{GM}{R^2}$$
+
+			so $\lim \limits _{r \to R} F(r) = \frac{GM}{R^2}$.
+
+			$$F(R) = \frac{GM}{R^2}$$
+
+			As $\lim \limits _{r \to R} F(r) = F(R)$, the function is continuous.	
+
+			\item Which of the following functions $f$ has a removable discontinuity at $a$?
+				If the discontinuity is removable, find a function $g$ that agrees with $f$
+				for $x \neq a$ and is continuous at $a$.
+
+			\begin{enumerate}
+				\item $f(x) = \frac{x^4 - 1}{x-1}, a = 1$
+				
+				This function has a removable discontiuity at $a$.
+
+				$$\frac{x^4 - 1}{x-1} = \frac{(x^2 + 1)(x^2 - 1)}{x-1}$$
+
+				$$\frac{(x^2+1)(x^2-1)}{x-1} = \frac{(x^2+1)(x+1)(x-1)}{x-1} = (x^2+1)(x+1)$$
+
+				$$g(x) = x^3 + x^2 + x + 1$$ 
+
+				\item $f(x) = \frac{x^3 - x^2 - 2x}{x-2}, a = 2$
+
+				This function has a removeable discontinuity at $a$.
+
+				If we factorise ...
+
+				$$\frac{x^3 - x^2 - 2x}{x-2} = \frac{(x-2)(x^2 + x)}{x-2} = x^2 + x$$
+
+				$$g(x) = x^2 + x$$	
+
+				\item $f(x) = [[\sin x]], a = \pi$
+
+				This is not a removable discontinuity. There is no function equivalent
+				to the greatest integer function that agrees with $f$ for $x \neq a$.	
+			\end{enumerate}
+
+			\item Suppose that a function $f$ is continuous on $[0, 1]$ except at 0.25
+				and that $f(0) = 1$ and $f(1) = 3$. Let $N = 2$. Sketch two possible
+				graphs of $f$, one showing that $f$ might not satisfy the conclusion
+				of the Intermediate Value Theorem and one showing that $f$ might still
+				satisfy the conclusion of the Intermediate Value Theorem (even though
+				it doesn't satisfy the hypothesis).
+
+			% TODO: Completed question 36
+
+			\item If $f(x) = x^2 + 10 \sin x$, show that there is a number $c$ such that
+				$f(c) = 1000$.
+
+			$$f(0) = 0$$
+			$$f(100) = 10009.8480775...$$
+
+			So if we prove that this function is continuous then by the intermediate value
+			therem there is some value $0 < c < 100$ such that $f(c) = 1000$.
+
+			From Theorem 6 polynomials and trigonometric functions we know that $x^2$
+			and $\sin x$ are continuous functions. From theorem 4 we know that 
+			$f + g$ and $cf$ are continuous functions, when $f$ and $g$ are continuous
+			functions and $c$ is a constant.
+
+			Therefore $f(x) = x^2 + 10\sin x$ is a continuous function.	
+
+			\item Suppose $f$ is continuous on $[1,5]$ and only the solutions of the equation
+				$f(x) = 6$ are $x = 1$ and $x = 4$. If $f(2) = 8$, explain why $f(3) > 6$.
+
+				If $x = 1$ and $x = 4$ are the \emph{only} solutions of $f(x) = 6$. We know for 
+				$1 < x < 4, f(x) > 6 \text{ or } f(x) < 6$. As $f(2) = 8, f(3) > 6$.
+
+			\item[39-42] Use the Intermediate Value Theorem to show that there is a root of the
+				given equation in the specified interval.
+
+			\item $x^4 + x - 3 = 0, (1,2)$
+
+				Let $f(x) = x^4 + x - 3$. We are looking for a value $c$ between 1 and 2
+				such that $f(c) = 0$. Therefore we take $a = 1, b = 2$, and $N = 0$. We
+				have
+
+				$$f(1) = (1)^4 + 1 - 3 = -1 < 0$$
+
+				and
+
+				$$f(2) = (2)^4 + 2 - 3 = 15 > 0$$
+
+				Thus $f(1) < 0 < f(2)$; that is $N = 0$ is a number between $f(1)$ and
+				$f(2)$. Now $f$ is continuous since it is a polynomial, so the Intermediate
+				Value Theorem says there is a number $c$ between 1 and 2 such that
+				$f(c) = 0$.
+
+			\item $\sqrt[3]{x} = 1 - x, (0, 1)$
+
+				Let $f(x) = \sqrt[3]{x} + x - 1$. We are looking for a value $c$ between
+				0 and 1 such that $f(c) = 0$. Therefore we take $a = 0, b = 1$, and $N = 0$.
+				We have
+
+				$$f(0) = \sqrt[3]{0} + 0 - 1 = -1 < 0$$
+
+				and
+
+				$$f(1) = \sqrt[3]{1} + 1 - 1 = 1 > 0$$
+
+				Thus $f(0) < 0 f(1)$; that is $N = 0$ is a number between $f(0)$ and $f(1)$.
+				$f$ is a continuous function, as it is a sum of continuous functions, so the
+				Intermediate Value Theorem says there is a number $c$ between 0 and 1 where
+				$f(c) = 0$.
+
+			\item $\cos x = x, (0,1)$
+
+				Let $f(x) = \cos x - x$. We are looking for a value $c$ between 0 and 1 such
+				that $f(c) = 0$. Therefore we take $a = 0, b = 1$, and $N = 0$. We have
+
+				$$f(0) = 1 - 0 = 1 > 0$$
+
+				and 
+
+				$$f(1) = 0.54030230586... - 1 = -0.45969769413... < 0$$
+
+				Thus $f(1) < 0 < f(0)$; that is $N = 0$ is a number between $f(0)$ and $f(1)$.
+				$f$ is a continuous function, as it is a sum of continuous functions, so the
+				Intermediate Value Theorem says there is a number $c$ between 0 and 1 where
+				$f(c) = 0$.
+
+			\item $\tan x = 2x, (0,1.4)$
+
+				Left $f(x) = \tan x - 2x$. We are looking for a value $c$ between 0 and 1.4
+				such that $f(c) = 0$. Therefore we take $a = 1, b = 1.4$, and $N = 0$ We will
+				take $a=1$ instead of $a=0$ as $f(0) = 0$ and so we cannot use $a=0$. We
+				have 
+
+				$$f(1) = 1.55740772465 - 2 = -0.44259227534 < 0$$
+
+				and
+
+				$$f(1.4) = 5.79788371548... - 2.8 = 2.99788371548... > 0$$
+
+				Thus $f(1) < 0 < f(1.4)$; that is $N = 0$ is a number between $f(0)$ and
+				$f(1)$. $f$ is a continuous function, as it is a sum of continuous functions,
+				so the Intermediate Value Theorem says there is a number $c$ between 0 and
+				1 where $f(c) = 0$.
+
+			\item[43-44]
+
+			\begin{enumerate}
+				\item Prove that the equation has at least one real root.
+
+				\item Use your calculator to find an interval of length $0.01$ that
+					contains a root.
+			\end{enumerate}
+
+			\item $\cos x = x^3$
+
+			\begin{enumerate}
+
+				\item
+
+				Lets take $f(x) = \cos x - x^2$
+
+				$$f(0) = 1 - 0 = 1 > 0$$
+
+				$$f(\pi/2) = 0 - \frac{pi^3}{8} = -\frac{\pi^3}{8} < 0$$
+
+				From the Intermediate Value Theorem there is a value $c$
+				where $0 < c < \frac{\pi}{2}$ where $f(c) = 0$.
+
+				\item
+
+				In decimals $\frac{\pi}{2} = 1.57...$
+
+				$$f(1) = \cos 1 - 1^3 = -0.45969769413... < 0$$
+
+				$$f(0.9) = \cos 0.9 - (0.9)^3 = -0.10739003172... < 0$$
+
+				$$f(0.8) = \cos 0.8 - (0.8)^3 = 0.18470670934... >0$$
+
+				So there is a root between 0.8 and 0.9.
+
+				$$f(0.85) = \cos 0.85 - (0.85)^3 = 0.04585814588... > 0$$
+
+				$$f(0.88) = \cos 0.88 - (0.88)^3 = -0.0443208558... < 0$$
+
+				$$f(0.87) = \cos 0.87 - (0.87)^3 = -0.01367645276... < 0$$
+
+				$$f(0.86) = \cos 0.86 - (0.86)^3 = 0.01638146816... > 0$$
+
+				So there is a root in the interval $(0.86,0.87)$.
+			\end{enumerate}
+
+			\item $x^5 - x^2 + 2x + 3 = 0$
+
+			\begin{enumerate}
+				\item
+
+				This function is continuous as polynomials are continuous.
+
+				$$f(x) = x^5 - x^2 + 2x + 3$$
+
+				$$f(0) = 0 - 0 + 0 + 3 = 3 > 0$$
+
+				$$f(-2) = -32 - 4 - 4 + 3 = -37 < 0$$
+
+				So there is a real root between $(-2, 0)$ (from the Intermediate Value
+				Theorem).	
+
+				\item
+
+				$$f(-1) = -1 < 0$$
+
+				$$f(-0.5) = 1.71875$$
+
+				$$f(-0.7) = 0.94194$$
+
+				$$f(-0.9) = -0.20049$$
+
+				$$f(-0.8) = 0.43232$$
+
+				$$f(-0.85) = 0.1337946875$$
+
+				$$f(-0.87) = 0.0046790793$$
+
+				$$f(-0.88) = -0.0621319168$$
+
+				So there is an interval $(-0.88, -0.87$ that contains a root.
+			\end{enumerate}
 	\end{enumerate}
 \end{document}

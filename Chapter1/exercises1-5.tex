@@ -613,5 +613,36 @@
 
 			% Question 49
 			\item Show that the function
+
+			$$f(x) = \begin{cases}
+				x^4 \sin(1/x)	& \text{if } x \neq 0 \\
+				0 & \text{if } x = 0
+			\end{cases}$$
+
+			is continuous on $(-\infty, \infty)$
+
+			First we should prove that $x^4 \sin(1/x)$ is continuous across
+			its domain $(-\infty, 0) \cup (0, \infty)$.
+
+			$1/x$ is a rational function and so is continuous across its domain.
+			Because $\sin x$ is continuous and $1\x$ is continuous, $\sin(1/x)$.
+			As the product of two rational functions, $x^4 \sin(1/x)$ is continuous.
+
+			To show that $f(x)$ is continuous at 0. We must show that $\lim \limits _{x \to 0} f(x)$
+			exists and that $\lim \limits _{x \to 0} = 0$.
+
+			We can do this via the squeeze theorem.
+
+			$$-1 \leq \sin(1/x) \leq 1$$
+
+			$-x^4 \leq \sin(1/x) \leq x^4$.
+
+			$$\lim \limits _{x \to 0} -x^4 = 0$$
+
+			$$\lim \limits _{x \to 0} x^4 = 0$$
+
+			So $\lim \limits _{x \to 0} f(x) = 0$ and $f(0) = 0$ so $f(x)$ is continuous.
+
+			
 	\end{enumerate}
 \end{document}

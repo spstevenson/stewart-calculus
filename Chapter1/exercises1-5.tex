@@ -643,6 +643,62 @@
 
 			So $\lim \limits _{x \to 0} f(x) = 0$ and $f(0) = 0$ so $f(x)$ is continuous.
 
-			
+			% Question 50
+			\item 
+			\begin{enumerate}
+				\item Show that the absolute value function $F(x) = |x|$
+					is continuous everywhere.
+
+					$$|x| = \begin{cases}
+						x & \text{if } x \geq 0 \\
+						-x & \text{if } x < 0
+						\end{cases}$$
+
+				because $x$ and $-x$ are continuous functions of x $|x|$ is
+				continuous across the intervals $(-\infty, 0)$ and $[0, \infty)$.
+
+				We just need to prove that $|x|$ is continuous at $0$.
+
+				$$\lim \limits {x \to 0^{-}} -x = 0$$
+				$$\lim \limits {x \to 0^{+}} x = 0$$
+				
+				So $\lim \limits {x \to 0} |x| = 0$
+
+				$|0| = 0$, as $\lim \limits {x \to 0} |x| = 0$ also $|x|$ is continuous.
+
+				\item Prove that if $f$ is a continuous function on an interval, then
+					so is $|f|$.
+
+					$$|f(x)| = \begin{cases}
+						f(x) & \text{if } f(x) \geq 0 \\
+						-f(x) & \text{if } f(x) < 0
+						\end{cases}$$
+
+					$$\lim \limits {f(x) \to 0^{+}} f(x) = 0$$
+					$$\lim \limits {f(x) \to 0^{-}} -f(x) = 0$$
+
+					So $\lim \limits {f(x) \to 0} |f(x)| = 0$
+
+					$|0| = 0$ and $\lim \limits {f(x) \to 0} |f(x| = 0$ so $f(x)$ is
+					continuous.
+				
+				\item Is the converse in the statement in part (b) alse true?
+				In other words, if $|f|$ is continuous, does it follow that $f$
+				is continuous? If so, prove it. If not, find a counterexample.
+
+				The converse is also true. If a continuous function $|f|$ is
+
+				$$|f| = \begin{cases}
+					f & \text{if } f \geq 0 \\
+					-f & \text{if } f < 0
+					\begin{cases}$$
+
+				Because $|f|$ is equivalent to $f$ over $[0, \infty)$, $f$ is continuous
+				from $(-\infty, 0$ so we just need to prove that $f$ is continuous at $0$.
+
+				$\lim \limits {f \to 0^{-}} f = 0$ and $\lim \limits {f \to 0^{+}} f = 0$ and
+				when $|f| = 0, f = 0$ so $f$ is continuous at $0$.
+
+			\end{enumerate}	
 	\end{enumerate}
 \end{document}

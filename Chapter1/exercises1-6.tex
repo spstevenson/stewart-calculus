@@ -357,7 +357,163 @@
 
 			$$\lim \limits _{x \to \infty} \frac{x^4 - 3x^2 + x}{x^3 - x + 2} = \infty$$
 
-		% Q28
+		% Q28 TODO
+		\item $\lim \limits _{x \to \infty} \frac{\sin^{2} x}{x^2}$
+
+		% 29
+		\item $\lim \limits _{x \to \infty} \cos x$
+
+			As the value of $\cos x$ oscillates between -1 and 1 into infinity, this
+			limit does not exist.
+
+		% Q30
+		\item $\lim \limits _{x \to \infty} \frac{x^3 - 2x + 3}{5 - 2x^2}$
+
+			First lets multiply the function by $\frac{ \frac{1}{x^2} }{ \frac{1}{x^2}}$
+
+			$$ \frac{ \frac{x^3}{x^2} - \frac{2x}{x^2} + \frac{3}{x^2} }{ \frac{5}{x^2} - \frac{2x^2}{x^2}} $$
+			
+			And then we simplify...
+
+			$$ \frac{ x - \frac{2}{x} + \frac{3}{x^2} }{ \frac{5}{x^2} - 2}$$
+
+			We can see that as $x \to \infty, x - \frac{2}{x} + \frac{3}{x^2}$ will grow infinitely large, whilst
+			the denominator $\frac{5}{x^2} - 2$ will approach -2. Therefore
+
+			$$\lim \limits _{x \to \infty} \frac{x^3 - 2x + 3}{5 - 2x^2} = -\infty$$
+
+		% Q31
+		\item $\lim \limits _{x \to \infty} (x - \sqrt{x})$
+
+			First lets multiply numerator and denominator by the conjugate radical
+
+			$$(x - \sqrt{x}) \times \frac{x + \sqrt{x}}{x + \sqrt{x}}$$
+
+			$$\frac{x^2 - x}{x + \sqrt{x}}$$
+
+			Then we multiply both numerator and denominator by $\frac{ \frac{1}{x} }{ \frac{1}{x} }$.
+
+			$$\frac{ \frac{x}{x} (x-1) }{ \frac{x}{x} + \frac{\sqrt{x}}{x}}$$
+
+			And if we simplify
+
+			$$\frac{x - 1}{1 + \frac{\sqrt{x}}{x}}$$
+
+			As $x \to \infty$ then $x - 1$ goes to $\infty$ whilst $1 + \frac{\sqrt{x}}{x}$ goes to 1.
+
+			Therefore...
+
+			$$\lim \limits _{x \to \infty} (x - \sqrt{x}) = \infty$$
+
+		% Q32
+		\item $\lim \limits _{x \to \infty} (x^2 - x^4)$
+
+			First lets multiply by the conjugate radical $\frac{x^2 + x^4}{x^2 + x^4}$
+
+			$$\frac{x^4 - x^8}{x^2 + x^4}$$
+
+			And simplifying
+
+			$$\frac{x^4(1 - x^4)}{x^2(1 + x^2)}$$
+
+			$$\frac{x^2(1 - x^4)}{1 + x^2}$$
+
+			Now lets multiply by $\frac{ \frac{1}{x^2} }{ \frac{1}{x^2} }$
+
+			$$\frac{1 - x^4}{ \frac{1}{x^2} + 1}$$
+
+			As $x \to \infty, 1 - x^4$ goes to $-\infty$, $\frac{1}{x^2} + 1$ goes to 1 so...
+
+			$$\lim \limits _{x \to \infty} (x^2 - x^4) = -\infty$$
+
+		% Q33
+		\item $\lim \limits _{x \to -\infty} (x^4 + x^5)$
+
+			As $x \to -\infty, x^4 \to \infty$ and $x^5 \to -\infty$. So...
+
+			$$\lim \limits _{x \to -\infty} (x^4 + x^5) = -\infty$$
+
+		% Q34 TODO
+
+		\item
+		\begin{enumerate}
+			\item Graph the function
+
+				$$f(x) = \frac{\sqrt{2x^2 + 1}}{3x - 5}$$
+
+				How many horizontal and vertical asymptotes do you observe?
+				Use the graph to estimate the values of the limits
+
+				$$\lim \limits _{x \to \infty} \frac{\sqrt{2x^2 + 1}}{3x - 5}
+				\text{	and	} \lim \limits _{x \to -\infty} \frac{\sqrt{2x^2 + 1}}{3x - 5}$$
+
+			\item By calculating values of $f(x)$, give numerical estimates of the limits in part (a).
+
+			\item Calculate the exact values of the limits in part (a). Did you get the same values for
+				these two limits? (In view of your answer to part (a), you might have to check your
+				calculation for the second limit.)
+		\end{enumerate}
+
+		\item[35-36] Find the horizontal and vertical asymptotes of each curve. Check your work by graphing
+			the curve and estimating the asymptotes.
+
+		% 35 TODO
+		\item $y = \frac{2x^2 + x - 1}{x^2 + x - 2}$
+
+		% Q36 TODO
+		\item $y = F(x) = \frac{x - 9}{\sqrt{4x^2 + 3x + 2}}$
 		
+
+		%Q37 TODO
+		\item
+		\begin{enumerate}
+			\item Estimate the value of
+
+				$$\lim \limits _{x \to -\infty} (\sqrt{x^2 + x + 1} + x)$$
+
+				by graphing the function $f(x) = \sqrt{x^2 + x + 1} + x$.
+
+			\item Use a table of values of $f(x)$ to guess the value of the limit.
+
+			\item Prove that your guess is correct.
+		\end{enumerate}
+
+		% Q38 TODO
+		\item
+		\begin{enumerate}
+			\item Use a graph of
+			
+			$$f(x) = \sqrt{3x^2 + 8x + 6} - \sqrt{3x^2 + 3x + 1}$$
+
+			to estimate the value of $\lim _{x \to \infty} f(x)$ to one
+			decimal place.
+
+			\item Use a table of values of $f(x)$ to estimate the limit to
+				four decimal places
+
+			\item Find the exact value of the limit.
+		\end{enumerate}
+
+		% Q39 TODO
+		\item Estimate the horizontal asymptote of the function
+
+		$$f(x) = \frac{3x^3 + 500x^2}{x^3 + 500x^2 + 100x + 2000}$$
+
+		by graphing $f$ for $-10 \leq x \leq 10$. Then calculate the
+		equation of the asymptote by evaluating the limit. How do you
+		explain the discrepancy?
+
+		% Q40
+		\item Find a formula for a function that has vertical asymptotes
+		$x = 1$ and $x = 3$ and horizontal asymptote $y = 1$.
+
+		$$\frac{1}{x^2 - 4x + 3} + 1$$
+
+		% Q41
+		\item Find a formula for a function $f$ that satisfies the following
+			conditions:
+
+			
+
 	\end{enumerate}
 \end{document}

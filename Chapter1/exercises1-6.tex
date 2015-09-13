@@ -513,7 +513,85 @@
 		\item Find a formula for a function $f$ that satisfies the following
 			conditions:
 
-			
+			$$\frac{x-3}{x^2(3-x)}$$
+
+		% Q42
+		\item Evaluate the limits.
+
+		\begin{enumerate}
+			\item $\lim \limits _{x \to \infty} x \sin (\frac{1}{x})$
+
+			First lets divide by $\frac{ \frac{1}{x} }{ \frac{1}{x} }$
+
+			$$\frac{\sin (\frac{1}{x})}{\frac{1}{x}}$$
+
+			Because $\lim \limits _{t \to \infty} \sin{t}/t$
+
+			$$\lim \limits _{x \to \infty} x \sin(\frac{1}{x}) = 1$$
+
+			\item $\lim \limits _{x \to \infty} \sqrt{x} \sin(\frac{1}{x}$
+
+			Like before, if we divide by $\frac{ \frac{1}{x} }{ \frac{1}{x} }$
+
+			$$\frac{\sin( \frac{1}{x} )}{\sqrt{x} \frac{1}{x}}$$
+
+			Because $\lim \limits _{x \to \infty} \frac{ \sin(\frac{1}{x}) }{ \frac{1}{x} } = 1$
+
+			$$\frac{ \sin( \frac{1}{x} }{\sqrt{x} \frac{1}{x}} = \frac{1}{\sqrt{x}}$$
+
+			Because $\lim \limits _{x \to \infty} \frac{1}{\sqrt{x}} = 0$
+
+			$$\lim \limits _{x \to \infty} \sqrt{x} \sin(\frac{1}{x}) = 0$$
+
+		\end{enumerate}
+
+		% Q43
+		\item A function $f$ is a ratio of quadratic functions and had a vertical asymptote $x = 4$ and
+			just one $x$-intercept, $x = 1$. It is known that $f$ had a removeable discontinuity at $x = -1$ and
+			$\lim _{x \to -1} f(x) = 2$. Evaluate
+
+		\begin{enumerate}
+			\item $f(0)$
+
+			The function would look like $\frac{5(x+1)(x-1)}{(x-4)(x+1)}$
+
+			So $f(0) = \frac{5}{4}$
+
+			\item $\lim \limits _{x \to \infty} f(x)$
+
+			First we multiply our function by $\frac{ \frac{1}{x^2} }{ \frac{1}{x^2} }$
+
+			$$\frac{ 5 - \frac{5}{x^2} }{1 - \frac{3}{x} - \frac{4}{x^2}}$$
+
+			So
+
+			$$\lim \limits _{x \to \infty} f(x) = 5$$
+		\end{enumerate}
+
+		% Q44 TODO
+		\item By the \emph{end behaviour} of a function we mean the behaviour of its values as
+			$x \to \infty$ and as $x \to -\infty$.
+
+		\begin{enumerate}
+			\item Describe and compare the end behaviour of the functions
+
+			$$P(x) = 3x^5 - 5x^3 + 2x \text{	} Q(x) = 3x^5$$
+
+			by graphing the functions in the viewing rectangles
+			$[-2, 2]$ by $[-2,2]$ and $[-10, 10]$ by $[-10000, 10000]$.
+
+			\item Two functions are said to have the \emph{same end behaviour} if their
+			ratio approaches 1 as $x \to \infty$. Show that $P$ and $Q$ have the same end
+			behaviour.
+		\end{enumerate}
+
+		% Q45
+		\item Let $P$ and $Q$ be polynomials. Find
+
+			$$\lim \limits _{x \to \infty} \frac{P(x)}{Q(x)}$$
+
+			if the degree of $P$ is (a) less than the degree of $Q$ and (b) greater than the
+			degree of $Q$.
 
 	\end{enumerate}
 \end{document}

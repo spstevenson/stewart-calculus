@@ -585,13 +585,138 @@
 			behaviour.
 		\end{enumerate}
 
-		% Q45
+		% Q45 TODO
 		\item Let $P$ and $Q$ be polynomials. Find
 
 			$$\lim \limits _{x \to \infty} \frac{P(x)}{Q(x)}$$
 
 			if the degree of $P$ is (a) less than the degree of $Q$ and (b) greater than the
 			degree of $Q$.
+
+		% Q46 TODO
+		\item Make a rough sketch of the curve $y = x^n$ ($n$ an integer) for the following five
+			cases:
+
+			\begin{enumerate}
+				\item $ n = 0$
+
+				\item $n > 0, n$ odd
+
+				\item $n > 0, n$ even
+
+				\item $n < 0, n$ odd
+
+				\item $n < 0, n$ even
+			\end{enumerate}	
+
+			Then use these sketches to find the following limits.
+
+			\begin{enumerate}
+				\item $\lim \limits _{x \to 0^{+}} x^{n}$
+
+				\item $\lim \limits _{x \to 0^{-}} x^{n}$
+
+				\item $\lim \limits _{x \to \infty} x^{n}$
+
+				\item $\lim \limits _{x \to -\infty} x^{n}$
+			\end{enumerate}
+
+		% Q47
+		\item Find $\lim _{x \to \infty} f(x)$ if, for all $x > 5$,
+
+			$$\frac{4x - 1}{x} < f(x) < \frac{4x^2 + 3x}{x^2}$$
+
+			First lets find $\lim \limits _{x \to \infty} \frac{4x - 1}{x}$
+
+			If we multiply top and bottom by $\frac{1}{x}$
+
+			$$\frac{4 - \frac{1}{x}}{1}$$
+
+			So... $\lim \limits _{x \to \infty} \frac{4x - 1}{x} = 4$
+
+			Now let's find $\lim \limits _{x \to \infty} \frac{4x^2 + 3x}{x^2}$
+
+			If we multiply top and bottom by $\frac{1}{x^2}$
+
+			$$\frac{4 + \frac{3}{x}}{1}$$
+
+			So... $\lim \limits _{x \to \infty} \frac{4x^2 + 3x}{x^2} = 4$
+
+			Because of the Squeeze Theorem...
+
+			$\lim \limits _{x \to \infty} f(x) = 4$
+
+		% Q49
+
+		\begin{enumerate}
+			\item A tank contains 5000 L of pure water. Brine that 
+				contains 30 g of salt per litre of water is pumped
+				into the tank at a rate of 25 L/min. Show that the
+				concentration of salt $t$ minutes later (in grams
+				per litre) is 
+
+				$$C(t) = \frac{30t}{200 + t}$$
+
+				After $t$ minutes, the total amount of water in the
+				tank is $5000 + 25t$
+
+				After $t$ minutes, the total amount of salt in the tank
+				is $(30 \times 25)t$
+
+				So... 
+
+				$$C(t) = \frac{750t}{5000 + 25t}$$
+
+				$$C(t) = \frac{25(30t)}{25(200 + t)}$$
+
+			\item What happens to the concentration as $t \to \infty$
+
+				$$\lim \limits _{t \to \infty} \frac{30t}{200 + t}$$
+
+				Multiply top and bottom by $\frac{1}{t}$
+
+				$$\frac{30}{1 + \frac{200}{t}}$$
+
+				So...
+
+				$$\lim \limits _{t \to \infty} \frac{30t}{200 + t} = 30$$
+
+				As more and more water is pumped in, the concentration of
+				salt will approach 30 g/L.
+		\end{enumerate}
+
+		% Q50 TODO
+
+		\item
+
+		\begin{enumerate}
+			\item Show that $\lim \limits _{x \to \infty} \frac{4x^2 - 5x}{2x^2 + 1} = 2$
+
+			\item By graphing the function in part (a) and the line $y = 1.9$ on a common
+				screen, find a number $N$ such that
+
+				$$\text{if	} x > N \text{	then	} \frac{4x^2 - 5x}{2x^2 + 1} > 1.9$$
+
+				What if 1.9 is replaced by 1.99?
+		\end{enumerate}
+
+		% Q51
+
+		\item How close to -3 do we have to take $x$ so that
+
+			$$\frac{1}{(x + 3)^4} > 10000$$
+
+			If $0 < |x - a| < \delta$ then $f(x) > M$
+
+			In this case
+
+			$$|x+3| < \delta, \frac{1}{(x+3)}^4 > M$$
+
+			$$\frac{1}{(x+3)^{4}} > M \Leftrightarrow x+3 < \frac{1}{\sqrt[4]{M}}$$
+
+			So $|x+3| < \delta = \frac{1}{\sqrt[4]{M}}$
+
+			If $M = 10000, \delta = \frac{1}{\sqrt[4]{10000}} = \frac{1}{10}$
 
 	\end{enumerate}
 \end{document}

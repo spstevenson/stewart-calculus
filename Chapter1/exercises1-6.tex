@@ -785,7 +785,71 @@
 				$$\frac{1}{\sqrt{0.0001}} = 100$$
 
 				So if $x > 100$ then $1/x^2 < 0.0001$.	
+
+			\item Taking $n = 2$ in 5, we have the statement
+
+				$$\lim \limits _{x \to \infty} \frac{1}{x^2} = 0$$
+
+				Prove this directly using Definition 7.
+
+				If $x > N$ then $|f(x) - L | < \epsilon$
+
+				So for us if $x > N$ then $\frac{1}{x^2} < \epsilon$
+
+				$$x^2 > \frac{1}{\epsilon}$$
+
+				$$x > \frac{1}{\epsilon^{2}}$$
+
+				So $x > N = \frac{1}{\epsilon^{2}}$
+
+				Therefore if $x > N$ then $\frac{1}{x^2} < \epsilon$	
 		\end{enumerate}
+
+		% Q58
+		\item Prove, using Definition 8, that $\lim \limits _{x \to \infty} x^3 = \infty$.
+
+			If $x > N$ then $f(x) > M$
+
+			In our case $x > N, x^3 > M$
+
+			So $x > \sqrt[3]{M}$ therefore $x > N = \sqrt[3]{M}$
+
+			Therefore if $x > N$ then $x^3 > M$.
+
+		% Q59
+		\item Prove that
+
+			$$\lim \limits _{x \to \infty} f(x) = \lim \limits _{t \to 0^{+}} f(1/t)$$
+
+			and
+
+			$$\lim \limits _{x \to -\infty} f(x) = \lim \limits _{t \to 0^{-}} f(1/t)$$
+
+			if these limits exist.
+
+			Taking the first statement. This is true if
+
+			$$\lim \limits _{x \to \infty} x = \lim \limits _{t \to 0^{+}} 1/t$$
+
+			So the first statement is true if...
+
+			$$\lim \limits _{t \to 0^{+}} 1/t = \infty$$
+
+			According to Definition 6
+
+			if $0 < t - a < \delta$ then $f(t) > M$		
+
+			So
+
+			If $0 < t < \delta$ then $1/t > M$
+
+			$$1/t > M \Leftrightarrow t < 1/M$$
+
+			So $0 < t < \delta = 1/M$
+
+			So because
+
+			If $0 < t < \delta$ then $t > M$, $\lim \limits _{t \to 0^{+}} 1/t = \infty$
 
 	\end{enumerate}
 \end{document}

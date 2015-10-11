@@ -152,7 +152,177 @@
 		\end{enumerate}
 
 		% Q10
-		\item How is the composite function $f \dot g$ defined? What is
+		\item How is the composite function $f \circ g$ defined? What is
 			its domain?
+
+		A composite function is where the output of one function is used as
+		the input for another function.
+
+		$$f \circ g = f(g(x))$$
+
+		% Q11
+		\item Suppose the graph of $f$ is given. Write an equation for each
+		of the graphs that are obtained from the graph of $f$ as follows:
+
+		\begin{enumerate}
+			\item Shift 2 units upwards
+
+				$f(x) + 2$
+
+			\item Shift 2 units downwards
+
+				$$f(x) - 2$$
+
+			\item Shift 2 units to the right
+
+				$$f(x - 2)$$
+
+			\item Shift 2 units to the left
+
+				$$f(x + 2)$$
+
+			\item Reflect about the $x$-axis
+
+				$$-f(x)$$
+
+			\item Reflect about the $y$-axis
+
+				$$f(-x)$$
+
+			\item Stretch vertically by a factor of 2.
+
+				$$2f(x)$$
+
+			\item Shrink vertically by a factor of 2.
+
+				$$\frac{1}{2}f(x)$$
+
+			\item Stretch horizontally by a factor of 2.
+
+				$$f(x/2)$$
+
+			\item Shrink horizontally by a factor of 2.
+
+				$$f(2x)$$
+		\end{enumerate}
+
+		% Q12 TODO
+		\item Explain what each of the following means and illustrate with
+			a sketch.
+
+		\begin{enumerate}
+			\item $\lim \limits _{x \to a} f(x) = L$
+
+			\item $\lim \limits _{x \to a^{+}} f(x) = L$
+
+			\item $\lim \limits _{x \to a^{-}} f(x) = L$
+
+			\item $\lim \limits _{x \to a} f(x) = \infty$
+
+			\item $\lim \limits _{x \to \infty} f(x) = L$
+		\end{enumerate}
+
+		% Q13 TODO
+		\item Describe several ways in which a limit can fail to exist.
+			Illustrate with sketches.
+
+		% Q14
+		\item State the following Limit Laws.
+
+		\begin{enumerate}
+			\item Sum Law
+
+			The limit of the sum is the sum of the limits (provided
+			the limits exist.)
+
+			$$\lim \limits _{x \to a} f(x) + g(x) = \lim \limits _{x \to a} f(x) + \lim \limits _{x \to a} g(x)$$
+
+			\item Difference Law
+
+			The limit of the difference is the difference of the limits (provided
+			the limits exist.)
+
+			$$\lim \limits _{x \to a} f(x) - g(x) = \lim \limits _{x \to a} f(x) - \lim \limits _{x \to a} g(x)$$
+
+			\item Constant Multiple Law
+
+			$$\lim \limits _{x \to a} c f(x) = c \lim \limits _{x \to a} f(x)$$
+
+			\item Product Law
+
+			The limit of the product is the product of the limits (provided the limits exist)
+
+			$$\lim \limits _{x \to a} f(x) g(x) = \lim \limits _{x \to a} f(x) \cdot \lim \limits _{x \to a} g(x)$$
+
+			\item Quotient Law
+
+			The limit of the quotient is the quotient of the limits (provided the limits exists and
+			the denominator is non-zero)
+
+			$$\lim \limits _{x \to a} \frac{f(x}{g(x)} = \frac{\lim \limits _{x \to a} f(x)}{\lim \limits _{x \to a} g(x)}$$
+
+			\item Power Law
+
+			$$ \lim \limits _{x \to a} f(x)^{n} = [\lim \limits _{x \to a} f(x)]^{n}$$
+
+			\item Root Law
+
+			$$\lim \limits _{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim \limits _{x \to a} f(x)}$$
+
+		\end{enumerate}
+
+		% Q15
+		\item What does the Squeeze Theorem say?
+
+		The squeeze theorem says, if
+
+		$h(x) \leq f(x) \leq g(x)$ when $x$ is near $a$
+
+		and 
+
+		$$\lim \limits _{x \to a} h(x) = \lim \limits _{x \to a} g(x) = l$$
+
+		then
+
+		$$\lim \limits _{x \to a} f(x) = L$$
+
+		% Q16
+		\item
+		\begin{enumerate}
+			\item What does it mean for $f$ to be continuous at $a$?
+
+			A function $f$ is continuous at a number $a$ if
+
+			$$\lim \limits _{x \to a} f(x) = f(a)$$
+
+			\item What does it mean for $f$ to be continuous on the
+			interval $(-\infty, \infty$? What can you say about the
+			graph of such a function?
+
+			A function is continuous on an interval if it is continuous
+			at every point along the interval. The graph will be smooth
+			with no breaks or discontinuities.
+		\end{enumerate}
+
+		% Q17
+		\item What does the Intermediate Value Theorem say?
+
+		The Intermediate Value Therem says the for a function continuous
+		along an interval $[a, b]$
+
+		If $f(a) < N < f(b)$ there exists a number $c$ such that $f(c) = N$.
+
+		% Q18 TODO
+
+		\item
+		\begin{enumerate}
+			\item What does it mean to say that the line $x = a$ is a 
+			vertical asymptote of the curve $y = f(x)$? Draw curves
+			to illustrate the various possiblities.
+
+			\item What does it mean to say that the line $y = L$ is a
+			horizontal asymptote of the curve $y = f(x)$? Draw curves
+			to illustrate the various possibilities.
+		\end{enumerate}
 	\end{enumerate}
 \end{document}

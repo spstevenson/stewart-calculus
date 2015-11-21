@@ -92,6 +92,68 @@ statement.
 		As the limit of the denominator is zero this statement is false.
 
 	% Q9
+	\item $\lim \limits _{x \to 1} \frac{x-3}{x^2 + 2x - 4} = 
+		\frac{\lim \limits _{x \to 1} (x-3)}{\lim\limits _{x \to 1} (x^2 + 2x - 4)}$
+
+		This is true. In this case $\lim \limits _{x \to 1} (x^2 + 2x - 4) \ne 0$ so
+		the limit of the quotient is the quotient of the limits.
+
+	% Q10
+	\item If $\lim \limits _{x \to 5} f(x) = 2$ and $\lim \limits _{x \to 5} g(x) = 0$,
+		then $\lim _{x \to 5} [f(x)/g(x)]$ does not exist.
+
+		This is false. The limit could still exist.
+
+		E.g. $f(x) = x - 3$ and $g(x) = x^2 - 3x - 10$
+
+		$$\lim \limits _{x \to 5} \frac{x-3}{x^2 - 3x - 10}$$
+
+		$$\lim \limits _{x \to 5} \frac{(x - 5) + 2}{(x-5)(x+2)}$$
+		$$\lim \limits _{x \to 5} \frac{2}{x+2}$$
+
+		$$\frac{\lim \limits _{x \to 5} 2}{\lim \limits _{x \to 5} x + 2}$$
+
+		$$\frac{2}{7}$$
+
+	% Q11
+	\item If $\lim _{x \to 5} f(x) = 0$ and $\lim _{x \to 5} g(x) = 0$, then
+		$\lim _{x \to 5} [f(x)/g(x)]$ does not exist.
+
+		This is false. Like before...
+
+		E.g. $f(x) = x - 5$ and $g(x) = (x-5)(x+3)$
+
+		$$\lim \limits _{x \to 5} \frac{x-5}{(x-5)(x+3)}$$
+
+		$$\lim \limits _{x \to 5} \frac{0}{x+3}$$
+
+		$$\frac{ \lim \limits _{x \to 5} 0}{\lim \limits _{x \to 5} x + 3}$$
+
+		$$\frac{0}{8} = 0$$
+
+	% Q12
+	\item If $\lim _{x \to 6} [f(x)g(x)]$ exists, then the limit must be $f(6)g(6)$
+
+		This is false.
+
+	% Q13
+	\item If $p$ is a polynomial, then $\lim _{x \to b} p(x) = p(b)$
+
+		This is true. Polynomials are continuous functions. This means
+
+		$$\lim \limits _{x \to a} f(x) = p(a)$$
+
+	% Q14
+	\item If $\lim \limits _{x \to 0} f(x) = \infty$ and $\lim \limits _{x \to 0} g(x) = \infty$
+		then $\lim \limits _{x \to 0} [f(x) - g(x)] = 0$.
+
+		This is false.
+
+		If $f(x) = \frac{1}{x}$ and $g(x) = \frac{1}{x^2}$
+
+		$$\lim \limits _{x \to 0} [\frac{1}{x} - \frac{1}{x^2}]$$
+
+		$$\lim \limits _{x \to 0} \frac{1}{x^2} = \infty$$
 \end{enumerate}
 
 \end{document}

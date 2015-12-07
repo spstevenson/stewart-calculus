@@ -253,6 +253,34 @@ statement.
 		$$f'(5) < x < f'(x)$$
 
 		So $\delta = f'(7)$ and $-\delta = f'(5)$.
+
+	% Q24
+	\item If $f(x) > 1$ for all $x$ and $\lim _{x \to 0} f(x)$ exists, that $\lim _{x \to 0} f(x) > 1$.
+
+		This is false. For example...
+
+		$$ \begin{cases}
+			x^2 + 1 & \text{ if } x < 0 \\
+			2 & \text{ if } x = 0 \\
+			x^2 + 1 & \text{ if } x > 0
+		\end{cases}$$
+
+		This function meets the requirements above, but that $\lim _{x \to 0} f(x) = 1$.
+
+	% Q25
+	\item If $f$ is continuous at $a$, so is $|f|$.
+
+		This is true. If $g$ is continuous at $a$ and $f$ is continuous at $g(a)$, then
+		the composite function $f \dot g$ given by $(f \dot g)(x) = f(g(x))$ is continuous
+		at $a$.
+
+		In our case the absolute value function is continuous everywhere. So $|f|$ is continuous.
+
+	% Q26
+	\item If $|f|$ is continuous at $a$, so is $f$.
+
+		This is true. $|f|$ will be continuous everywhere $f$ is continuous at. So if
+		$|f|$ is continuous at $a$, then so is $f$.
 \end{enumerate}
 
 \end{document}

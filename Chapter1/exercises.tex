@@ -1,0 +1,201 @@
+\documentclass{article}
+
+\renewcommand{\thesection}{}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Exercises}
+
+\begin{enumerate}
+
+% Q1
+\item Let $f$ be the function whose graph is given.
+
+	\begin{enumerate}
+		\item Estimate the value of $f(2)$
+
+			$$f(2) = 1.5$$
+
+		\item Estimate the values of $x$ such that $f(x) = 3$.
+
+			$$f(2.2) = 3$$
+
+			$$f(5.5) = 3$$
+
+		\item State the domain of $f$.
+
+			The domain of $f$ is $[-6, 6]$.
+
+		\item State the range of $f$.
+
+			The range of $f$ is $[-4, 4]$
+
+		\item On what interval is $f$ increasing?
+
+			$f$ is increasing over $[-4, 4]$
+
+		\item If $f$ even, odd or neither even nor odd? Explain.
+
+			$f$ is odd as it is symmetrical around the origin.
+
+			This means that $f(-x) = -f(x)$
+	\end{enumerate}
+
+	% Q2
+	\item Determine whether each curve is the graph of a function of $x$.
+		If it is, state the domain and range of the function.
+
+	\begin{enumerate}
+		\item
+
+		This is not a function as it does not pass the vertical line test.
+
+		\item
+
+		This is a function.
+
+		The domain is $[-3, 3]$. The range is $[-2, 3]$.
+	\end{enumerate}
+
+	\item[3-6] Find the domain and range of the function. Write your answer
+		in interval notation.
+
+	% Q3
+	\item $f(x) = 2/(3x - 1)$
+
+		Domain is $(-\infty , \infty)$.
+
+		Range is $(-\infty, 0) \cup (0, \infty)$
+
+	% Q4
+	\item $g(x) = \sqrt{16 - x^4}$
+
+		Domain is $[-2, 2]$, the range is $[0, \infty)$
+
+	% Q5
+	\item $y = 1 + \sin x$
+
+		The domain is $(-\infty, \infty)$ the range is $[0, 2]$
+
+	% Q6
+	\item $y = \tan 2x$
+
+		The domain is $[x : x \text{ is a real number } \ne k\pi \text{ for all integers } k]$.
+
+		The range is $[-\infty, \infty]$
+
+	% Q7
+	\item Suppose that the graph of $f$ is given. Describe how the graphs of the 
+		following functions can be obtained from the graph of $f$.
+
+	\begin{enumerate}
+		\item $y = f(x) + 8$
+
+			The graph of $f$ is moved upwards by 8.
+
+		\item $y = f(x + 8)$
+
+			The graph is shifted by 8 to the left.
+
+		\item $y = 1 + 2f(x)$
+
+			The graph of $f$ is stretched vertically by a factor of
+			2 and moved upwards by 1.
+
+		\item $y = f(x - 2) - 2$
+
+			The graph of $f$ is shifted to the right by 2 and 
+			downwards by 2.
+
+		\item $y = -f(x)$
+
+			The graph is flipped around the $x$-axis.
+
+		\item $y = 3 - f(x)$
+
+			The graph is flipped around the $x$-axis and upwards
+			by 3.
+
+	\end{enumerate}
+
+	% Q8 TODO
+	\item The graph of $f$ is given. Draw the graphs of the following functions.
+
+	% Q 9-14 TODO
+	\item[9-14] Use transformations to sketch the graph of the function.
+
+	% Q15
+	\item Determine whether $f$ is even, odd, or neither even nor odd.
+
+	\begin{enumerate}
+		\item $f(x) = 2x^5 - 3x^2 + 2$
+
+		$$f(-x) = 2(-x)^5 - 3(-x)^2 + 2$$
+
+		$$f(-x) = -2x^5 - 3x^2 + 2$$
+
+		So $f(x)$ is neither even nor odd.
+
+		\item $f(x) =  x^3 - x^7$
+
+		$$f(-x) = (-x)^3 - (-x)^7$$
+
+		$$f(-x) = -x^3 + x^7$$
+
+		$$-x^3 + x^7 = -(x^3 - x^7)$$
+
+		So this function is odd.
+
+		\item $f(x) = \cos(x^2)$
+
+		$$f(-x) = \cos((-x)^2)$$
+
+		$$f(-x) = \cos(x^2)$$
+
+		$$f(-x) = f(x)$$
+
+		So this function is even.
+
+		\item $f(x) = 1 + \sin x$
+
+		$$f(-x) = 1 + \sin(-x)$$
+
+		$$f(-x) = 1 - \sin x$$
+
+		This function is neither even nor odd.
+	\end{enumerate}
+
+	% Q16
+	\item Find an expression for the function whose graph consists of the
+		line segment from the point $(-2,2)$ to the point $(-1, 0)$
+		together with the top half of the circle with center the origin
+		and radius 1.
+
+		The straight line will have equation
+
+		$$y = -2x - 1$$
+
+		And the circle has equation
+
+		$$x^2 + y^2 = r^2$$
+
+		Because $r = 1$
+
+		$$y^2 = 1 - x^2$$
+
+		The upper half of the circle will be
+
+		$$y = \sqrt{1 - x^2}$$
+
+		So using a piecewise function we get...
+
+		$$f(x) = \begin{cases}
+			-2x - 1 & \text{ if } -2 \leq x \leq -1 \\
+			\sqrt{1 - x^2} & \text{ if } -1 < x \leq 1
+		\end{cases}
+		$$
+\end{enumerate}
+
+\end{document}

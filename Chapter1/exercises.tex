@@ -3,6 +3,7 @@
 \renewcommand{\thesection}{}
 
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \begin{document}
 
@@ -196,6 +197,144 @@
 			\sqrt{1 - x^2} & \text{ if } -1 < x \leq 1
 		\end{cases}
 		$$
+
+	% Q17
+	\item If $f(x) = \sqrt{x}$ and $g(x) = \sin x$, find the functions (a)
+		$f \circ g$, (b) $g \circ f$, (c) $f \circ f$, (d) $g \circ g$,
+		and their domains.
+
+		\begin{enumerate}
+			\item $f \circ g$
+
+				$$\sqrt{\sin x}$$
+
+				The domain of this is 
+
+				$${x \in \mathbb{R} | 2k\pi \leq x \leq 2k\pi + \pi, k \in \mathbb{Z}}$$	
+
+			\item $g \circ f$
+
+				The function is...
+
+				$$\sin (\sqrt{x})$$
+
+				And the domain is...
+
+				$$[0, \infty)$$
+
+			\item $f \circ f$
+
+				The function is...
+
+				$$\sqrt{\sqrt{x}} = x^{\frac{1}{4}} = \sqrt[4]{x}$$
+
+				The domain is...
+
+				$$[0, \infty)$$
+
+			\item $g \circ g$
+
+				The function is...
+
+				$$\sin (\sin x)$$
+
+				The domain is...
+
+				$$(-\infty, \infty)$$
+		\end{enumerate}
+
+		% Q 17
+		\item Express the function $F(x) = 1/\sqrt{x + \sqrt{x}}$ as a composition
+			of three functions.
+
+			$$a(x) = \frac{1}{x}$$
+			$$b(x) = \sqrt{x}$$
+			$$c(x) = x + \sqrt{x}$$
+
+			And the composition is $a \circ b \circ c$
+
+		% Q 19 TODO
+
+		% Q20 TODO
+
+		\item[21-36] Find the limit.
+
+		% Q21
+		\item $\lim \limits _{x \to 0} \cos(x + \sin x)$
+
+			This can be solved using the direct substitution principle.
+
+			$$\cos(0 + \sin 0) = \cos(0 + 0) = 1$$
+
+		% Q22
+		\item $\lim \limits _{x \to 3} \frac{x^2 - 9}{x^2 + 2x - 3}$
+
+			This can also be solved with the direct substitution principle.
+
+			$$\frac{3^2 - 9}{3^2 + 2(3) - 3} = \frac{9 - 9}{9 + 6 - 3} = \frac{0}{12}$$
+
+		% Q23
+		\item $\lim \limits _{x \to -3} \frac{x^2 - 9}{x^2 + 2x - 3}$
+
+			Because the denominator goes to zero, we must find an equivalent function.
+
+			$$\frac{(x+3)(x-1)}{(x+3)(x-3)}$$
+
+			$$\frac{x-2}{x-3}$$
+
+			The limit of this equivalent function is $\frac{-3-2}{-3-3} = \frac{-5}{-6} = \frac{5}{6}$
+
+		% Q24
+		\item $\lim \limits _{x \to 1^{+}} \frac{x^2 - 9}{x^2 + 2x - 3}$
+
+			First the simplified function is...
+
+			$$\frac{x-3}{x-1}$$
+
+			In the denominator, as $x$ grows closer to 1 from the positive side
+			the denominator becomes a very small positive number. Therefore
+			the limit of the function is $\infty$.
+
+		% Q25
+		\item $\lim \limits _{h \to 0} \frac{(h-1)^3 + 1}{h}$
+
+			First lets expand out the numerator...
+
+			$$(h-1)^3 = h^3 - 3h^2 +3h - 1$$
+
+			So the exanded out numerator is...
+
+			$$\frac{h^3 - 3h^2 + 3h}{h}$$
+
+			We can cancel out the denominator to get an equivalent function
+
+			$$\lim \limits _{h \to 0} h^2 - 3h + 3 = 3$$
+
+		% Q26
+		\item $\lim \limits _{t \to 2} \frac{t^2 - 4}{t^3 - 8}$
+
+			First lets simplify the function
+
+			$$t^2 - 4 = (t + 2)(t-2)$$
+
+			$$t^3 - 8 = (t-2)(t^2 + 2t + 4)$$
+
+			And we have...
+
+			$$\frac{(t+2)(t-2)}{(t-2)(t^2 + 2t + 4)}$$
+
+			After cancelling...
+
+			$$\frac{t+2}{t^2+2t+4)}$$
+
+			The we can use Direct Substitution with the simplified function
+
+			$$\lim \limits _{t \to 2} \frac{t+2}{t^2+2t+4} = \frac{1}{3}$$	
+
+		% Q27
+		\item $\lim \limits _{r \to 9} \frac{\sqrt{r}}{(r-9)^4}$
+
+			
 \end{enumerate}
 
 \end{document}

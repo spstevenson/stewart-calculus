@@ -443,7 +443,73 @@
 			$$ = \frac{1}{x-2}$$
 
 			$$\lim \limits _{x \to 1} \frac{1}{x-2} = -1$$
-		
-\end{enumerate}
 
+		% Q35
+		\item $\lim \limits _{x \to 0} \frac{\cot 2x}{\csc x}$
+
+		Let's use trig identities to figure out the limit.
+
+		$$\frac{\cot 2x}{\csc x} = \frac{\sin x}{\tan 2x}$$
+
+		Using $\tan u = \frac{\sin x}{\cos x}$
+
+		$$\frac{\sin x}{\tan 2x} = \frac{\cos 2x \sin x}{\sin 2x}$$
+
+		Using $\sin 2u = 2 \sin u \cos u$
+
+		$$ = \frac{\cos 2x \sin x}{ 2 \sin x \cos x} = \frac{\cos 2x}{2 \cos x}$$
+
+		$$\lim \limits _{x \to 0} \frac{\cos 2x}{2 \cos x} = \frac{1}{2}$$
+
+		% 36
+		\item $\lim \limits _{t \to 0} \frac{t^3}{\tan ^{3} 2t}$
+
+			$$ [\frac{t}{\tan 2t}]^3$$
+
+			$$ [\frac{t \cos 2t}{\sin 2t} ]^3 $$
+
+			$$\frac{8}{8} \times [\frac{t \cos 2t}{\sin 2t} ]^3$$
+
+			$$[\frac{2t \cos 2t}{2 \sin 2t}]^3$$
+
+			$$[\frac{\cos 2t}{2} \times \frac{2t}{\sin 2t}]^3$$
+
+			Using the third limit law
+
+			$$[ \lim \limits _{t \to 0} \frac{\cos 2t}{2} \times \lim \limits _{t \to 0} \frac{2t}{\sin 2t}]^3$$
+
+			Because $\lim \limits _{\theta \to a} \frac{\sin \theta}{\theta} = 1$
+
+			$$[ \lim \limits _{t \to 0} \frac{\cos 2t}{2} ]^3 = \frac{1}{8}$$
+
+			So
+
+			$$\lim \limits _{t \to 0} \frac{t^3}{\tan ^{3} 2t} = \frac{1}{8}$$
+
+		\item[37-38] Use graphs to discover the asymptotes of the curve. Then prove what you have discovered.
+
+		% Q 37 TODO
+		\item $y = \frac{\cos^2 x}{x^2}$
+
+		% Q 38 TODO
+		\item $y = \sqrt{x^2 + x + 1} - \sqrt{x^2 - x}$
+
+		% Q 39 
+		\item if $2x - 1 \leq f(x) \leq x^2$ for $0 < x < 3$, find $\lim _{x \to 1} f(x)$.
+
+			Using the squeeze theorem.
+
+			If $g(x) \leq f(x) \leq h(x)$
+
+			and $\lim \limits _{x \to a} g(x) = \lim \limits _{x \to a} h(x) = L$
+
+			then $\lim \limits _{x \to a} f(x) = L$
+
+			$$\lim \limits _{x \to 1} 2x - 1 = 1$$
+
+			$$\lim \limits _{x \to 1} x^2 = 1$$
+
+			so $\lim \limits _{x \to 1} f(x) = 1$
+
+	\end{enumerate}
 \end{document}

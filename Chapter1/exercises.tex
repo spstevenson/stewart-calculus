@@ -511,5 +511,68 @@
 
 			so $\lim \limits _{x \to 1} f(x) = 1$
 
+		% Q 40
+		\item Prove that $\lim _{x \to 0} x^2 \cos(1/x^2) = 0$.
+
+			Using the squeeze theorem.
+
+			$$-1 \leq \cos(\frac{1}{x^2}) \leq 1$$
+			$$-x^2 \leq x^2 \cos(\frac{1}{x^2}) \leq x^2$$
+
+			$$\lim \limits _{x \to 0} -x^2 = 0$$
+			$$\lim \limits _{x \to 0} x^2 = 0$$
+
+			so
+
+			$$\lim \limits _{x \to 0} x^2 \cos(1/x^2) = 0$$
+
+		\item[41-44] Prove the statement using the precise definition of a limit.
+
+		% Q 41
+		\item $\lim \limits _{x \to 2} (14 - 5x) = 4$
+
+			If $|x - 2| < \delta$
+
+			then we must find a number $\epsilon$ where $|(14-5x) -4| < \epsilon$
+
+			$$|10 - 5x| < \epsilon$$
+			$$|2 - x| < \frac{\epsilon}{5}$$
+
+			$$|2-x| = |-(2-x)| = |x-2|$$
+
+			So $|x - 2| < \frac{epsilon}{5}$
+
+			$$\delta = \frac{epsilon}{5}$$
+
+			Therefore if
+
+			$$|x-2| < \delta$$
+
+			Then
+
+			$$5|x-2| < \epsilon$$
+
+			So $|(14 - 5x) -4 < \epsilon$
+
+			and $\lim \limits _{x \to 2} (14 - 5x) = 4$	
+
+		% Q42
+		\item $\lim \limits _{x \to 0} \sqrt[3]{x} = 0$
+
+			If there is a positive $\epsilon$ then we need to find
+			a number $\delta$ such that
+
+			if $0 < |x| < \delta$ then $|\sqrt[3]{x}| < \epsilon$
+
+			$$|\sqrt[3]{x}| = \sqrt[3]{|x|}$$ so
+
+			$$|x| < \epsilon^3$$
+
+			Therefore $ \delta = \epsilon^3$
+
+			If $0 < |x| < \delta$ then $\sqrt[3]{|x|} < \epsilon$ so 
+
+			$$\lim \limits _{x \to 0} \sqrt[3]{x} = 0$$
+
 	\end{enumerate}
 \end{document}

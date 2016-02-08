@@ -574,5 +574,98 @@
 
 			$$\lim \limits _{x \to 0} \sqrt[3]{x} = 0$$
 
+		% Q43
+		\item $\lim \limits _{x \to \infty} \frac{1}{x^4} = 0$
+
+			If $x > M$
+
+			then we must find a value $\epsilon$ where $\frac{1}{x^4} < \epsilon$
+
+			$$x^4 > \frac{1}{\epsilon}$$
+
+			$$x > \frac{1}{\sqrt[4]{\epsilon}}$$
+
+			So
+
+			$$M = \frac{1}{\sqrt[4]{\epsilon}}$$
+
+			So if $x > M = \frac{1}{\sqrt[4]{\epsilon}}$ then $\frac{1}{x^4} < \epsilon$
+
+			So $\lim \limits _{x \to \infty} \frac{1}{x^4} = 0$
+
+		% Q44
+		\item $\lim \limits _{x \to 4^{+}} \frac{2}{\sqrt{x-4}} = \infty$
+
+			So if $0 < x-4 < \delta$ then there must be some
+			value $N$ where $\frac{2}{\sqrt{x-4}} > N$.
+
+			$$frac{\sqrt{x-4}}{2} < \frac{1}{N}$$
+			$$\sqrt{x-4} < \frac{2}{N}$$
+
+			$$x - 4 < \frac{4}{N^2}$$
+
+			So $\delta = \frac{4}{N^2}$
+
+			Therefore if $0 < x-4 < \delta = \frac{4}{N^2}$ then $\frac{2}{\sqrt{x-4}} > N$
+
+			So $\lim \limits _{x \to 4^{+}} = \infty$
+
+		% Q45 TODO
+
+		\item Show that each function is continuous on its domain. State the domain.
+
+			\begin{enumerate}
+				\item $g(x) = \frac{\sqrt{x^2 - 9}}{x^2 - 2}$
+
+					If $f$ and $g$ are continiuous so is $\frac{f}{g}$.
+
+					As $\sqrt{x^2 - 9}$ is a root function of a polynomial it is continuous.
+
+					As $x^2 - 2$ is a polynomial function it is a continuous function.
+
+					So $g(x)$ is continuous.
+
+					The domain of $g(x)$ is $(-\infty, -3] \cup [3, \infty)$
+
+				\item $h(x) = \sqrt[4]{x} + x^3 \cos x$
+
+					If $\sqrt[4]{x}$ and $x^3 \cos x$ are continuous then $h(x)$ is continuous.
+
+					$\sqrt[4]{x}$ is continuous as it is a root function.
+
+					$x^3 \cos x$ is continuous if both $x^3$ and $\cos x$ are continuous
+
+					$x^3$ is continuos as a cube function, $\cos x$ is continuous as a trigonometric function.
+
+					The domain is $[0, \infty)$
+			\end{enumerate}
+
+		\item[47-48] Use the intermediate value theorem to show that there is a root of the equation in the given
+				interval.
+
+			% Q47
+			\item $x^5 - x^3 + 3x - 5 = 0 (1,2)$
+
+			If $f(x) = x^5 - x^3 + 3x - 5$
+
+			$f(1) = -2$
+
+			and
+
+			$f(2) = 25$
+
+			Because $f(1) = -2$ and $f(2) = 25$ there exists a number $N$ where $1 < N < 2$ and $f(N) = 0$.
+
+			% Q48
+			\item $2 \sin x = 3 - 2x, (0,1)$
+
+				$f(x) = 2 \sin x + 2x - 3$
+
+				$f(0) = -3$
+
+				$f(1) = 0.6829...$
+
+			Because $f(0) = -3$ and $f(1) = 0.6829$ there exists a number $N$ where $0 < N < 1$ and $f(N) = 0$
+			
 	\end{enumerate}
 \end{document}

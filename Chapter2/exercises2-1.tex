@@ -192,6 +192,169 @@
 
 			$$v(t) = -9.8t$$
 			$$v(2) = -19.6$$
+
+		% Q12
+		\item If an arrow is shot upward on the moon with a velocity of 58 m/s, its height (in meters)
+			after $t$ seconds is given by $H = 58t - 0.83t^2$.
+
+		\begin{enumerate}
+			\item Find the velocity of the arrow after 1 second.
+
+				$$v = \lim \limits _{h \to 0} \frac{58(t + h) - 0.83(t+h)^2 - (58t - 0.83t^2)}{h}$$
+
+				$$v = \lim \limits _{h \to 0} \frac{58(t+h) - 0.83(t^2+th+h^2)-58t+0.83t^2}{h}$$
+
+				$$v = \lim \limits _{h \to 0} \frac{58t+58h-0.83t^2-0.83th-0.83h^2-58t+0.83t^2}{h}$$
+
+				$$v = \lim \limits _{h \to 0} \frac{58h - 0.83th-0.83h^2}{h}$$
+
+				$$v = \lim \limits _{h \to 0} 58 - 0.83t -0.83h$$
+
+				$$v(t) = 58 - 0.83t$$
+
+				So
+
+				$$v(1) = 58 - 0.83(1) = 57.17 \text{m/s}$$
+
+			\item Find the velocity of the arrow when $t=a$
+
+				$v(a) = 58-0.83a$
+
+			\item When will the arrow hit the moon?
+
+				The velocity of the arrow when its the moon will be the negation of its initial
+				velocity so we must solve...
+
+				$$58 - 0.83t = -58$$ 
+				$$-0.83t = -58 -58$$
+				$$0.83t = 58+58$$
+				$$t = \frac{58+58}{0.83}$$
+				$$t = \frac{116}{0.83}$$
+				$$t = 139.76 \text{ seconds}$$
+		\end{enumerate}
+
+		% Q13
+		\item The displacement (in meters) of a particle moving in a straight line is given by the equation
+			of motion $s = 1/t^2$, where $t$ is measured in seconds. Find the velocity of the particle at
+			times $t=a,t=1,t=2$ and $t=3$.
+
+			$$v(t) = \lim \limits _{h \to 0} \frac{ \frac{1}{(t + h)^2} - \frac{1}{t^2} }{h}$$
+
+			$$v(t) = \lim \limits _{h \to 0} \frac{t^2 - (t+h)^2}{ht^2(t+h)^2}$$
+
+			$$v(t) = \lim \limits _{h \to 0} \frac{t^2 - (t^2 + 2th + h^2)}{ht^2(t+h)^2}$$
+
+			$$v(t) = \lim \limits _{h \to 0} \frac{2th+h^2}{ht^2(t+h)^2} = \frac{2t}{t^2t^2}$$
+
+			$$v(t) = \frac{2}{t^3}$$
+
+			So now we can plug in our values...
+
+			$$v(a) = \frac{2}{a^3}$$
+			$$v(1) = 2$$
+			$$v(2) = \frac{1}{4}$$
+			$$v(3) = \frac{2}{27}$$
+
+		% TODO: Q14
+		\item The displacement (in meters) of a particle moving in a straight line is given 
+			by $s = t^2 - 8t + 18$, where $t$ is measured in seconds.
+
+		\begin{enumerate}
+			\item Find the average velocity over each time interval:
+
+			\begin{enumerate}
+				\item $[4,3]$
+
+				\item $[3.5,4]$
+
+				\item $[4,5]$
+
+				\item $[4,4.5]$
+			\end{enumerate}
+
+			\item Find the instantaneous velocity when $t = 4$.
+
+			\item Draw the graph of $s$ as a function of $t$ and draw the secant lines
+				whose slopes are the average velocities in part (a) and the tangent
+				line whose slope is the instantaneous velocity in part (b).
+		\end{enumerate}
+
+		% TODO: Q15
+		\item For the function $g$ whose graph is given, arrange the following numbers in
+			increasing order and explain your reasoning:
+
+			\begin{tabular}{ccccc}
+				$0$ & $g'(-2)$ & $g'(0)$ & $g'(2)$ & $g'(4)$
+			\end{tabular}
+
+		% Q16
+		\item Find an equation of the tangent line to the graph of $y = g(x)$ at $x = 5$ if
+			$g(5) = -3$ and $g'(5) = 4$.
+
+			The gradient of the graph at $g(5)$ is $4$ as $g'(5) = 4$. So $m = 4$.
+
+			So
+
+			$$y - y_1 = 4(x - x_1)$$
+
+			Because $g(5) = -3$
+
+			$$y - (-3) = 4(x - 5)$$
+
+			$$y + 3 = 4x - 20$$
+
+			$$y = 4x - 23$$
+
+		% Q17
+		\item If an equation of the tangent line to the curve $y = f(x)$ at the point where
+			$a=2$ is $y = 4x-5$, find $f(2)$ and $f'(2)$
+
+			Because the tangent line is equal to $f(x)$ at 2, $f(2) = 3$. $f'(2)$ is equal
+			to the gradient of the tangent at 2 so $f'(2) = 4$.
+
+		% Q18
+		\item If the tangent to $y = f(x)$ at $(4,3)$ passes through the point $(0,2)$, find $f(4)$ and
+			$f'(4)$.
+
+			$$f(4) = 3$$
+
+			$$m = \frac{3 - 2}{4 - 0} = \frac{1}{4}$$
+
+			So $f'(4) = \frac{1}{4}$
+
+		% TODO: Q19
+		\item Sketch the graph of a function $f$ for which $f(0) = 0, f'(0) = 3, f'(1) = 0$, and
+			$f'(2) = -1$.
+
+		% TODO: Q20
+		\item Sketch the graph of a function $g$ for which
+			$g(0) = g(2) = g(4) = 0, g'(1) = g'(3) = 0,$
+			$g'(0) = g'(4) = 1, g'(2) = -1, \lim _{x \to \infty} g(x) = \infty,$
+			and $\lim _{x \to -\infty} g(x) = -\infty$.
+
+		% Q21
+		\item If $f(x) = 3x^2 - x^3,$ find $f'(1)$ and use it to find an equation of the tangent
+			line to the curve $y = 3x^2 - x^3$ at the point $(1,2)$.
+
+			$$\lim \limits _{h \to 0} \frac{3(x+h)^2 - (x+h)^3 - [3x^2-x^3]}{h}$$
+
+			$$\lim \limits _{h \to 0} \frac{3(x^2+2xh+h^2)-(x+h)(x^2+2xh+h^2) - [3x^2-x^3]}{h}$$
+
+			$$\lim \limits _{h \to 0} \frac{3(x^2+2xh+h^2)-(x^3+3x^2h+3xh^2+h^3) - [3x^2-x^3]}{h}$$
+
+			$$\lim \limits _{h \to 0} \frac{3x^2+6xh+3h^2-x^3-3x^2h-3xh^2-h^3-3x^2+x^3}{h}$$
+
+			$$\lim \limits _{h \to 0} \frac{6xh+3h^2-3x^2h-3xh^2+h^2}{h}$$
+
+			$$\lim \limits _{h \to 0} 6x + 3h - 3x^2 - 3xh + h^2 = 6x - 3x^2$$
+
+			$$f'(1) = 6(1)-3(1)^2 = 6-3 = 3$$
+
+			$$y - 2 = 3(x - 1)$$
+
+			$$y - 2 = 3x - 3$$
+
+			$$y = 3x - 1$$
 	\end{enumerate}
 
 \end{document}

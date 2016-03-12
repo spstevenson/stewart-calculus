@@ -355,6 +355,121 @@
 			$$y - 2 = 3x - 3$$
 
 			$$y = 3x - 1$$
+
+		% Q22
+		\item If $g(x) = 1 - x^3$, find $g'(0)$ and use it to find an equation of the tangent to the 
+			curve $y = 1 - x^3$ at the point $(0,1)$.
+
+		$g(x) = 1 - x^3$ and we need to find $g'(0)$
+
+		$$g'(0) = \lim \limits _{h \to 0} \frac{g(0+h) - g(0)}{h}$$
+
+		$$g'(0) = \lim \limits _{h \to 0} \frac{1 - h^3 - 1}{h}$$
+
+		$$g'(0) = \lim \limits _{h \to 0} h^2 = 0$$
+
+		$$y - 1 = 0(x - 0)$$
+
+		$$y = 1$$
+
+		% TODO: Q23
+		\item 
+		\begin{enumerate}
+			\item If $F(x) = 5x/(1 + x^2)$, find $F'(2)$ and use it to find and equation of the tangent
+				line to the curve
+
+				$$y = \frac{5x}{1 + x^2}$$
+
+				at the point $(2,2)$.
+
+			\item Illustrate part (a) by graphing the curve and the tangent line on the same screen.
+		\end{enumerate}
+
+		% TODO: Q24
+		\item
+		\begin{enumerate}
+			\item If $G(x) = 4x^2 - x^3$, find $G'(a)$ and use it to find equations of the tangent lines
+				to the curve $y = 4x^2 - x^3$ at the points $(2,8)$ and $(3,9)$.
+
+			\item Illustrate part (a) by graphing the curve and the tangent lines on the same screen.
+		\end{enumerate}
+
+		\item[25-30] Find $f'(a)$
+
+		% Q25
+		\item $f(x) = 3x^2 - 4x + 1$
+			
+			$$f'(a) = \lim \limits _{h \to 0} \frac{f(a+h) - f(a)}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{3(a+h)^2 - 4(a+h) + 1 - (3a^2 - 4a + 1)}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{3(a^2+2ah+h^2) - 4a - 4h + 1 - 3a^2 + 4a - 1}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{3a^2 + 6ah + 3h^2 - 4a - 4h + 1 - 3a^2 + 4a - 1}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{6ah + 3h^2 - 4h}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} 6a + 3h - 4$$
+
+			$$f'(a) = 6a - 4$$
+
+		% Q26
+		\item $f(t) = t^4 - 5t$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{(a+h)^4 - 5(a+h) - (a^4 - 5a)}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{a^4+4a^3h+6a^2h^2+4ah^3+h^4-5a-5h-a^4+5a}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{4a^3h + 6a^2h^2 + 4ah^3 + h^4 - 5h}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} 4a^3 + 6a^2h + 4ah^2 + h^3 - 5 = 4a^3 - 5$$
+
+		% Q27
+		\item $f(t) = \frac{2t+1}{t+3}$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{ \frac{2(a+h)+1}{(a+h)+3} - \frac{2a+1}{a+3}}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{ \frac{2a + 2h + 1}{a + h + 3} - \frac{2a+1}{a+3} }{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{(2a+2h+1)(a+3) - (a+h+3)(2a+1)}{(a+h+3)(a+3)h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{2a^2+2ah+a+6a+6h+3-2a^2-2ah-6a-a-h-3}{h(a+h+3)(a+3)}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{6h-h}{h(a+h+3)(a+3)}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{5}{(a+h+3)(a+3)} = \frac{5}{(a+3)^2}$$
+
+		% Q28
+		\item $f(x) = x^{-2}$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{(a+h)^{-2} - a^{-2}}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{ \frac{1}{(a+h)^2} - \frac{1}{a^2} }{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{ a^2 - (a+h)^2 }{ha^2(a+h)^2}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{a^2 - (a^2+2ah+h^2)}{ha^2(a+h)^2}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{-2ah-h^2}{ha^2(a+h)^2}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{-2a-h}{a^2(a+h)^2} = - \frac{2a}{a^4} = - \frac{2}{a^3}$$			
+
+		% Q29
+		\item $f(x) = \sqrt{1-2x}$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{\sqrt{1-2(a+h)} - \sqrt{1-2a}}{h}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{\sqrt{1-2a-2h} - \sqrt{1-2a}}{h}$$
+
+			We multiply this by $\frac{ \sqrt{1-2a-2h} + \sqrt{1-2a} }{ \sqrt{1-2a-2h} + \sqrt{1-2a}}$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{(1-2a-2h) - (1-2a)}{h(\sqrt{1-2a-2h} + \sqrt{1-2a}}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{-2h}{h(\sqrt{1-2a-2h} + \sqrt{1-2a}}$$
+
+			$$f'(a) = \lim \limits _{h \to 0} \frac{-2}{\sqrt{1-2a-2h} + \sqrt{1-2a}}$$
+
+			$$f'(a) = - \frac{1}{\sqrt{1-2a}}$$
 	\end{enumerate}
 
 \end{document}

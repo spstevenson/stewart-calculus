@@ -3,6 +3,7 @@
 \renewcommand{\thesection}{}
 
 \usepackage{amsmath}
+\usepackage{gensymb}
 
 \begin{document}
 
@@ -530,6 +531,207 @@
 			$$f(x) = t^4 + t$$
 
 			$$a = 1$$
+
+		% TODO: Q37
+		\item A warm can of soda is placed in a cold refrigerator. Sketch the
+			graph of the temperature of the soda as a functionof time. Is
+			the initial rate of change of temperature greater or less than
+			the rate of change after an hour?
+
+		% TODO: Q38
+		\item A roast turkey is taken from an oven when its temperature has reached
+			85\degree C and is placed on a table in a room where the temperature is 
+			24\degree C. The graph shows how the temperature of the turkey decreases and
+			eventually approaches room temperature. By measuring the slope of
+			the tangent, estimate the rate of change of the temperature after an
+			hour.
+
+		% Q39
+		\item The table shows the number of passengers $P$ that arrived in Ireland by air,
+			in millions.
+
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline Year & 2001 & 2003 & 2005 & 2007 & 2009 \\
+			\hline $P$ & 8.49 & 9.65 & 11.78 & 14.54 & 12.84 \\
+			\hline
+		\end{tabular}	
+
+		\begin{enumerate}
+
+			\item Find the average rate of increase of $P$
+
+			\begin{enumerate}
+				\item from 2001 to 2005
+
+				$$\frac{11.78 - 8.49}{2005 - 2001}$$
+				$$\frac{3.29}{4} = 0.8225$$
+
+				\item from 2003 to 2005
+
+				$$\frac{11.78 - 9.65}{2005 - 2003}$$
+				$$\frac{2.13}{2} = 1.065$$
+
+				\item from 2005 to 2007
+
+				$$\frac{14.54 - 11.78}{2007 - 2005}$$
+				$$\frac{2.76}{2} = 1.38$$
+			\end{enumerate}
+
+			\item Estimate the instantaneous rate of growth in 2005 by
+				taking the average of two average rates of change.
+				What are its units?
+
+					$$\frac{1.065 + 1.38}{2}$$
+					$$\frac{2.445}{2} = 1.2225$$
+
+				The units would be $P Y^{-1}$, or passengers per year.
+
+		\end{enumerate}	
+
+		% Q40
+		\item The number $N$ of locations of a popular coffeehouse chain is given
+			in the table. (The number of locations as of October 1 are given.)
+
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				Year & 2004 & 2005 & 2006 & 2007 & 2008 \\ \hline
+				$N$ & 8569 & 10,241 & 12,440 & 15,011 & 16,680 \\ \hline
+			\end{tabular}
+
+			\begin{enumerate}
+				\item Find the average rate of growth
+
+				\begin{enumerate}
+					\item from 2006 to 2008
+
+						$$\frac{16680 - 12440}{2008 - 2006}$$
+						$$\frac{4240}{2} = 2120$$
+
+						2190 stores per year
+
+					\item from 2006 to 2007
+
+						$$\frac{15011 - 12440}{2007 - 2006}$$
+						$$\frac{2571}{1} = 2571$$
+
+						2571 stores per year
+					\item from 2005 to 2006
+
+						$$\frac{12440 - 10241}{2006 - 2005}$$
+						$$\frac{2199}{1} = 2199$$
+
+						2199 stores per year
+				\end{enumerate}
+
+				\item Estimate the instantaneous rate of growth in 2006 by
+					taking the average of two average rates of change.
+					What are its units?
+
+					$$\frac{2571 + 2199}{2} = \frac{4770}{2} = 2385$$
+
+					2385 stores per year
+
+				% TODO part c
+				\item Estimate the instantaneous rate of growth in 2006 by measuring the slope of a tangent.
+
+				% TODO: part d
+				\item Estimate the instantaneous rate of growth in 2007 and compare it 
+					with the growth rate in 2006. What do you conclude?
+			\end{enumerate}
+
+			% Q42
+			\item If a cylindrical tank holds 100,000 liters of water, which can be drained
+				from the bottom of the tank in an hour, then Toricelli's Law gives the
+				volume $V$ of water remaining in the tank after $t$ minutes as
+
+				$$V(t) = 100000(1 - \frac{1}{60}t)^2, \text{	} 0 \le t \le 60$$
+
+				Find the rate at which the water is flowing out of the tank (the instantaneuous
+				rate of change of $V$ with respect to $t$) as a function of $t$. What are
+				its units? For times $t = 0, 10, 20, 30, 40, 50, \text{ and } 60 \text{ min}$,
+				find the flow rate and the amount of water remaining in the tank. Summarize
+				your findings in a sentence or two. At what time is the flow rate the greatest?
+				The least?
+
+				Firstly lets expand out $100000(1 - \frac{1}{60}t)^2$
+
+				$$100000(1 - \frac{t}{30} + (\frac{1}{60}t)^2)$$
+
+				$$100000(1 - \frac{t}{30} + \frac{t^2}{3600})$$
+
+				$$100000(1 + \frac{3t^2 - 360t}{10800})$$
+				$$100000 + \frac{100000(3t^2 - 360t)}{10800}$$
+
+				$$100000 + \frac{1000(3t^2 - 360t)}{108}$$
+
+				$$100000 + \frac{3000t^2 - 360000t}{108}$$
+
+				So if we do $f(t+h) - f(t)$
+
+				$$100000 + \frac{3000(t+h)^2 - 360000(t+h)}{108} - (100000 + \frac{3000t^2 - 360000t}{108}$$
+
+				$$\frac{3000(t+h)^2 - 360000(t+h)}{108} - \frac{3000t^2 - 360000t}{108}$$
+
+				So our limit is
+
+				$$f'(t) = \lim \limits _{h \to 0} \frac{3000(t+h)^2 - 360000(t+h) + 360000t - 3000t^2}{108h}$$
+
+				$$f'(t) = \lim \limits _{h \to 0} \frac{3000t^2 + 6000th + 3000h^2 - 360000t - 360000h + 360000t - 3000t^2}{108h}$$
+
+				$$f'(t) = \lim \limits _{h \to 0} \frac{6000th + 3000h^2 - 360000h}{108h}$$
+
+				$$f'(t) = \lim \limits _{h \to 0} \frac{6000t + 3000h - 360000}{108}$$
+
+				$$f'(t) = \frac{6000t - 360000}{108}$$
+
+				\begin{tabular}{|c|c|}
+				
+					\hline Time (mins) & Litres / min \\
+					\hline 0 & -3333.3 \\
+					\hline 10 & -2777.8 \\
+					\hline 20 & -2222.2 \\
+					\hline 30 & -1666.7 \\
+					\hline 40 & -1111.1 \\
+					\hline 50 & -555.6 \\
+					\hline 60 & 0 \\
+					\hline
+				\end{tabular}
+
+				As we can see the flow is getting smaller with respect to time. The
+				flow is greatest at $t = 0$. The flow is the least when $t = 60$ (when the
+				tank is empty and $f'(t) = 0$
+
+			\item The cost of producing $x$ kilograms of gold from a new gold mine
+				is $C= f(x)$ dollars.
+
+			\begin{enumerate}
+				\item What is the meaning of the derivative $f'(x)$? What are its units?
+
+					$f'(x)$ is the instantaneous rate of change of the function $f(x)$ at
+					the point $x$. In this case it is the marginal cost of the gold mine.
+					Its units are dollars per kilogram.
+
+				\item What does the statement $f'(50) = 36$ mean?
+
+					This means that the instantaneous rate of change at $x = 50$ is
+					36 dollars per kilogram. So when the mine is producing 50 kilograms
+					of gold, then the cost per kilogram of producing more gold is 
+					36 dollars.
+
+				% TODO
+				\item Do you think the values of $f'(x)$ will increase or decrease in the
+					short term? What about the long term? Explain.
+			\end{enumerate}
+
+			\item The number bacteria after $t$ hours in a controlled laboratory experiment
+				is $n = f(t)$.
+
+			\begin{enumerate}
+				\item What is the meaning of the derivative $f'(5)$? What are its units?
+
+			
+			\end{enumerate}
+
 	\end{enumerate}
 
 \end{document}

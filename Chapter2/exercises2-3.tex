@@ -1,0 +1,786 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\renewcommand{\thesection}{}
+
+\begin{document}
+
+	\section{2.3 Exercises}
+
+	\begin{enumerate}
+		\item[1-26] Differentiate the function.
+
+		% Q1
+		\item $f(x) = 2^{40}$
+
+			Because this is a constant function
+
+			$$\frac{d}{dx} 2^{40} = 0$$
+
+		% Q2
+		\item $f(x) = \sqrt{30}$
+
+			Because this is a constant function
+
+			$$\frac{d}{dx} \sqrt{30} = 0$$
+
+		% Q3
+		\item $f(t) = 3 - \frac{2}{3}t$
+
+			$$f'(t) = \frac{d}{dt}3 - \frac{d}{dt} (\frac{2}{3}t)$$
+
+			$$f'(t) = -\frac{2}{3} [\frac{d}{dt} t]$$
+
+			Because $\frac{d}{dt} t = 1$
+
+			$$f'(t) = -\frac{2}{3}$$
+
+		% Q4
+		\item $F(x) = \frac{3}{4}x^8$
+
+			$$F'(x) = \frac{3}{4} [\frac{d}{dx} x^8]$$
+
+			Because $\frac{d}{dx} x^8 = 8x^7$
+
+			$$F'(x) = \frac{3}{4} (8x^7) = 6x^7$$
+
+		% Q5
+		\item $f(x) = x^3 - 4x + 6$
+
+			$$f'(x) = \frac{d}{dx} x^3 - \frac{d}{dx} 4x + \frac{d}{dx} 6$$
+
+			$$f'(x) = 3x^2 - 4$$	
+
+		% Q6
+		\item $f(t) = \frac{1}{2}t^6 - 3t^4 + t$
+
+			$$f'(t) = \frac{d}{dt} [\frac{1}{2}t^6] - \frac{d}{dt} 3t^4 + \frac{d}{dt} t$$
+
+			$$f'(t) = \frac{1}{2} [\frac{d}{dt} t^6] - 3[\frac{d}{dt} t^4] + 1$$
+
+			$$f'(t) = \frac{1}{2} (6t^5) - 3(4t^3) + 1$$
+
+			$$f'(t) = 3t^5 - 12t^3 + 1$$
+
+		% Q7
+		\item $f(x) = 3x^2 - 2\cos x$
+
+			$$f'(x) = \frac{d}{dx} 3x^2 - \frac{d}{dx} 2\cos x$$
+
+			$$f'(x) = 3 [\frac{d}{dx} x^2] - 2 [\frac{d}{dx} \cos x$$
+
+			$$f'(x) = 3 (2x) - 2 (-\sin x)$$
+
+			$$f'(x) = 6x + 2\sin x$$
+
+		% Q8
+		\item $y = \sin t + \pi \cos t$
+
+			$$\frac{dy}{dt} = \frac{d}{dt} (\sin x) + \frac{d}{dt} (\pi \cos t)$$
+
+			$$\frac{dy}{dt} = \cos x + \pi [\frac{d}{dt} \cos t]$$
+
+			$$\frac{dy}{dt} = \cos x + \pi (- \sin t)$$
+
+			$$\frac{dy}{dt} = \cos x - \pi \sin t$$
+
+		% Q9
+		\item $g(x) = x^2(1-2x)$
+
+			Although we could solve this using the product rule, lets expand the brackets.
+
+			$$g(x) = x^2 - 2x^3$$
+
+			$$g'(x)  = \frac{d}{dx} x^2 - \frac{d}{dx} [2x^3]$$
+
+			$$g'(x)  = 2x - 2 [\frac{d}{dx} x^3]$$
+
+			$$g'(x) = 2x - 2 (3x^2)$$
+
+			$$g'(x) = 2x - 6x^2$$
+
+		% Q10
+		\item $h(x) = (x-2)(2x + 3)$
+
+			Lets expand this out into a polynomial that we can differentiate with the power rule.
+
+			$$h(x) = 2x^2 + 3x - 4x - 6$$
+
+			$$h(x) = 2x^2 - x - 6$$
+
+			$$h'(x) = \frac{d}{dx} (2x^2) - \frac{d}{dx} x - \frac{d}{dx} 6$$
+
+			$$h'(x) = 2 [ \frac{d}{dx}x^2] - 1$$
+
+			$$h'(x) = 2(2x) - 1$$
+
+			$$h'(x) = 4x - 1$$
+
+		% Q11
+		\item $y = x^{-2/5}$
+
+			$$\frac{dy}{dx} = \frac{d}{dx} x^{-2/5}$$
+
+			$$\frac{dy}{dx} = -\frac{2 x^{-7/5}}{5}$$
+
+		% Q12
+		\item $B(y) = cy^{-6}$
+
+			Here we are treating $c$ as a constant
+
+			$$B'(y) = \frac{d}{dy} (cy^{-6})$$
+
+			$$B'(y) = c [\frac{d}{dy} y^{-6}$$
+
+			$$B'(y) = c(-6y^{-7})$$
+
+			$$B'(y) = -6cy^{-7}$$
+
+		% Q13
+		\item $A(s) = - \frac{12}{s^{5}}$
+
+			We can express this as 
+
+			$$A(s) = - 12s^{-5}$$
+
+			$$A'(s) = \frac{d}{ds} [-12s^{-5}]$$
+
+			$$A'(s) = -12 [\frac{d}{ds} s^{-5}]$$
+
+			$$A'(s) = -12 (-5 s^{-6})$$
+
+			$$A'(s) = 60 s^{-6}$$
+
+		% Q14
+		\item $y = x^{5/3} - x^{2/3}$
+
+			$$\frac{dy}{dx} = \frac{d}{dx} x^{5/3} - \frac{d}{dx} x^{2/3}$$
+
+			$$\frac{dy}{dx} = \frac{5 x^{2/3}}{3} - \frac{2}{3x^{1/3}}$$
+
+		% Q15
+		\item $R(a) = (3a + 1)^2$
+
+			$$R(a) = 6a^2 + 6a + 1$$
+
+			$$R'(a) = \frac{d}{da} [6a^2] + \frac{d}{da} [6a] + \frac{d}{da} 1$$
+
+			$$R'(a) = 6 [\frac{d}{da} a^2] + 6 [\frac{d}{da} a]$$
+
+			$$R'(a) = 6 (2a) + 6 (1) + 1$$
+
+			$$R'(a) = 12a + 6$$	
+
+		% Q16
+		\item $y = \sqrt{x}(x - 1)$
+
+			$$y = x \sqrt{x} - \sqrt{x}$$
+
+			$$y = x \dot x^{1/2} - \sqrt{x}$$
+
+			$$y = x^{3/2} - x^{1/2}$$
+
+			$$\frac{dy}{dx} = \frac{d}{dx} x^{3/2} - \frac{d}{dx} x^{1/2}$$
+
+			$$\frac{dy}{dx} = \frac{3\sqrt{x}}{2} - \frac{1}{2\sqrt{x}}$$
+
+		% Q17
+		\item $S(p) = \sqrt{p} - p$
+
+			$$S'(p) = \frac{d}{dp} p^{1/2} - \frac{d}{dp} p$$
+
+			$$S'(p) = \frac{1}{2} p^{-1/2} - 1$$
+
+		% Q18
+		\item $S(R) = 4 \pi R^2$
+
+			$$S'(R) = \frac{d}{dR} 4 \pi R^2$$
+
+			$$S'(R) = 4 \pi [\frac{d}{dR} R^2$$
+
+			$$S'(R) = 4 \pi (2R)$$
+
+			$$S'(R) = 8 \pi R$$
+
+		% Q19
+		\item $y = \frac{x^2 + 4x + 3}{\sqrt{x}}$
+
+			$$y = (x^2 + 4x + 3)(x^{-1/2})$$
+
+			$$y = x^{3/2} + 4x^{1/2} + 3x^{-1/2}$$
+
+			$$\frac{dy}{dx} = \frac{d}{dx} x^{3/2} + \frac{d}{dx} 4x^{1/2} + \frac{d}{dx} x^{-1/2}$$
+
+			$$\frac{dy}{dx} = \frac{3x^{1/2}}{2} + 4 [\frac{d}{dx} x^{1/2}] - \frac{1}{2x^{3/2}}$$
+
+			$$\frac{dy}{dx} = \frac{3x^{1/2}}{2} + \frac{2}{x^{1/2}} - \frac{1}{2x^{3/2}}$$
+
+		% Q20
+		\item $g(u) = \sqrt{2}u + \sqrt{3u}$
+
+			$$g'(u) = \frac{d}{du} \sqrt{2}u + \frac{d}{du} \sqrt{3u}$$
+
+			We can work out $frac{d}{du} \sqrt{3u}$ using the chain rule or from the 
+			definition of a derivative.
+
+			$$\frac{d}{du} \sqrt{3u} = \lim \limits _{h \to 0} \frac{\sqrt{3(u+h)} - \sqrt{3u}}{h}$$
+
+			We multiply this by $\frac{\sqrt{3(u+h)} + \sqrt{3u}}{\sqrt{3(u+h) + \sqrt{3u}}}$
+
+			$$\frac{d}{du} \sqrt{3u} = \lim \limits _{h \to 0} \frac{3(u+h) - 3u}{h(\sqrt{3(u+h)} + \sqrt{3u}}$$
+
+			$$\frac{d}{du} \sqrt{3u} = \lim \limits _{h \to 0} \frac{3h}{h(\sqrt{3(u+h)} + \sqrt{3u}}$$
+			
+			$$\frac{d}{du} \sqrt{3u} = \lim \limits _{h \to 0} \frac{3}{\sqrt{3(u+h)} + \sqrt{3u}}$$
+
+			$$\frac{d}{du} \sqrt{3u} = \frac{3}{2\sqrt{3u}}$$
+
+			We can use this result to solve the original derivative.
+
+			$$g'(u) = \sqrt{2} \frac{d}{du} u + \frac{3}{2\sqrt{3u}}$$
+			
+			$$g'(u) = \sqrt{2} + \frac{3}{2\sqrt{3u}}$$
+
+		% Q21
+		\item $v = t^2 - \frac{1}{\sqrt[4]{t^3}}$
+
+			$$\frac{dv}{dt} = \frac{d}{dt} t^2 - \frac{d}{dt} \frac{1}{\sqrt[4]{t^3}}$$
+
+			$$\frac{dv}{dt} = 2t - \frac{d}{dt} t^{-3/4}$$
+
+			$$\frac{dv}{dt} = 2t + \frac{3}{4} t^{-7/4}$$
+
+		% Q22
+		\item $y = \frac{x^2 - 2\sqrt{x}}{x}$
+
+			$$y = \frac{x^2}{x} - \frac{2\sqrt{x}}{x}$$
+
+			$$y = x - 2x^{-1/2}$$
+
+			$$\frac{dy}{dx} = \frac{d}{dx} x - \frac{d}{dx} 2x^{-1/2}$$
+
+			$$\frac{dy}{dx} = 1 + x^{-3/2}$$
+
+		% Q23
+		\item $z = \frac{A}{y^{10}} + B \cos y$
+
+			$$\frac{dz}{dy} = \frac{d}{dy} Ay^{-10} + \frac{d}{dy} B \cos y$$
+
+			$$\frac{dz}{dy} = A [\frac{d}{dy} y^{-10}] + B [\frac{d}{dy} \cos y$$
+
+			$$\frac{dz}{dy} = A (-10y^{-11}) + B [ - \sin y]$$
+
+			$$\frac{dz}{dy} = -10Ay^{-11} - B\sin y$$
+
+		% Q24
+		\item $y = \frac{\sin \theta}{2} + \frac{c}{\theta}$
+
+			$$y = \frac{1}{2} \sin \theta + c \theta^{-1}$$
+
+			$$\frac{dy}{d\theta} = \frac{d}{d\theta} (\frac{1}{2} \sin \theta) + \frac{d}{d\theta} (c \theta^{-1})$$
+
+			$$\frac{dy}{d\theta} = \frac{1}{2} [ \frac{d}{d\theta} \sin \theta ] + c [ \frac{d}{d\theta} \theta^{-1}]$$
+
+			$$\frac{dy}{d\theta} = \frac{1}{2} (\cos \theta) + c (- \theta^{-2})$$
+
+			$$\frac{dy}{d\theta} = \frac{1}{2} \cos \theta - c \theta^{-2}$$
+
+		% Q25
+		\item $H(x) = (x + x^{-1})^{3}$
+
+			Lets expand this out
+
+			$$H(x) = x^3 + 3x^2(x^{-1}) + 3x(x^{-1})^{2} + (x^{-1})^{3}$$
+
+			$$H(x) = x^3 + 3x + 3x \dot x^{-2} + x^{-3}$$
+
+			$$H(x) = x^3 + 3x + 3x^{-1} + x^{-3}$$
+
+			$$H'(x) = 3x^2 + 3 - 3x^{-2} - 3x^{-4}$$
+
+		% Q26
+		\item $u = \sqrt[3]{t^2} + 2\sqrt{t^3}$
+
+			$$u = t^{2/3} + 2t^{3/2}$$
+
+			$$\frac{du}{dt} = \frac{d}{dt} t^{2/3} + \frac{d}{dt} 2t^{3/2}$$
+
+			$$\frac{du}{dt} = \frac{2}{3} t^{-1/3} + 2[\frac{d}{dt} t^{3/2}]$$
+
+			$$\frac{du}{dt} = \frac{2}{3} t^{-1/3} + \frac{6}{2} t^{1/2}$$
+			$$\frac{du}{dt} = \frac{2}{3} t^{-1/3} + 3t^{1/2}$$
+
+		\item[27-28] Find equations of the tangent line and the normal line to
+				the curve at the given point.
+
+		% Q27
+		\item $y = 6 \cos x, (\pi/3,3)$
+
+			First lets differentiate the equation
+
+			$$y' = - 6 \sin x$$
+
+			$$y'(\pi/3) = - 6 \sin (\pi/3)$$
+
+			$$\sin \frac{\sqrt{3}}{2}$$
+
+			$$y'(\pi/3) = - 6 \frac{\sqrt{3}}{2} = - 3 \sqrt{3}$$
+
+			We can then use the point - slope equation to get the tangent line.
+
+			$$y - 3 = - 3 \sqrt{3} ( x - \frac{\pi}{3} )$$
+
+			$$y - 3= - 3x\sqrt{3} + \pi \sqrt{3}$$
+
+			$$y = - 3x\sqrt{3} + \pi \sqrt{3} + 3$$
+
+			To get the equation for the normal we must find the gradient of the perpendicular
+
+			$$ = \frac{1}{3\sqrt{3}}$$
+
+			And use the point - slope again.
+
+			$$y - 3 = \frac{1}{3\sqrt{3}} (x - \frac{\pi}{3})$$
+
+			$$y - 3 = \frac{x}{3\sqrt{3}} - \frac{\pi}{\sqrt{3}$$
+
+			$$ = \frac{x}{3\sqrt{3}} - \frac{\pi}{\sqrt{3}} + 3$$
+
+		% Q28
+		\item $y = (1 + 2x)^2, (1,9)$
+
+			First lets expand the equation
+
+			$$y = 4x^2 + 4x + 1$$
+
+			Now lets differentiate...
+
+			$$y' = 8x + 4$$
+
+			The gradient of the curve at 1 is...
+
+			$$y'(1) = 8(1) + 4 = 12$$
+
+			Using the point - slope method we can determine an equation for the tangent
+
+			$$y - 9 = 12(x -1)$$
+
+			$$y - 9 = 12x - 12$$
+
+			$$y = 12x - 12 + 9 = 12x - 3$$
+
+			The normal is perpendicular to the tangent
+
+			$$m = -\frac{1}{12}$$
+
+			Using the point - slope method we can determine an equation for the normal
+
+			$$y - 9 = -\frac{1}{12}(x - 1)$$
+
+			$$y - 9 = -\frac{1}{12}x + \frac{1}{12}$$
+
+			$$y = -\frac{x}{12} + 9 + \frac{1}{12}$$
+
+		\item[31-34] Find the first and sercond derivatives of the function.
+
+		% Q31
+		\item $f(x) = x^4 - 3x^3 + 16x$
+
+			$$f'(x) = \frac{d}{dx} x^4 - \frac{d}{dx} 3x^3 + \frac{d}{dx} 16x$$
+
+			$$f'(x) = 4x^3 - 3[\frac{d}{dx} x^3] + 16 [\frac{d}{dx} x]$$
+
+			$$f'(x) = 4x^3 - 3[3x^2] + 16[1]$$
+
+			$$f'(x) = 4x^3 - 9x^2 + 16$$
+
+			$$f''(x) = \frac{d}{dx} 4x^3 - \frac{d}{dx} 9x^2 + \frac{d}{dx} 16$$
+
+			$$f''(x) = 4[\frac{d}{dx} x^3] - 9[\frac{d}{dx} x^2]$$
+
+			$$f''(x) = 4[3x^2] - 9[2x]$$
+
+			$$f''(x) = 12x^2 - 18x$$
+
+		% Q32
+		\item $G(r) = \sqrt{r} + \sqrt[3]{r}$
+
+			$$G(r) = r^{1/2} + r^{1/3}$$
+
+			$$G'(r) = \frac{d}[dx} r^{1/2} + \frac{d}{dx} r^{1/3}$$
+
+			$$G'(r) = \frac{1}{2} r^{-1/2} + \frac{1}{3} r^{-2/3}$$
+
+			$$G''(r) = - \frac{1}{4} r^{-3/2} - \frac{2}{9} r^{-5/3}$$
+
+		% Q33
+		\item $g(t) = 2\cos t - 3 \sin t$
+
+			$$g'(t) = \frac{d}{dt} 2\cos t - \frac{d}{dt} 3 \sin t$$
+
+			$$g'(t) = 2[\frac{d}{dt} \cos t] - 3 [\frac{d}{dt} \sin t]$$
+
+			$$g'(t) = 2[-\sin t] - 3[\cos t]$$
+
+			$$g'(t) = 3 \cos t - 2 \sin t$$
+
+			$$g''(t) = - 3 \sin t - 2 \cos t$$
+
+		% Q34
+		\item $h(t) = \sqrt{t} + 5 \sin t$
+
+			$$h(t) = t^{1/2} + 5\sin t$$
+
+			$$h'(t) = \frac{1}{2} t^{-1/2} + 5 \cos t$$
+
+			$$h''(t) = -\frac{1}{4} t^{-3/2} - 5 \sin t$$
+
+		% Q35
+		\item Find $\frac{d^{99}}{dx^{99}} (\sin x)$
+
+			Lets do the first few derivations
+
+			$$\frac{d}{dx} (\sin x) = \cos x$$
+
+			$$\frac{d^{2}}{dx^{2}} (\sin x) = -\sin x$$
+
+			$$\frac{d^{3}}{dx^{3}} (\sin x) = -\cos x$$
+
+			$$\frac{d^{4}}{dx^{4}} (\sin x) = \sin x$$
+
+			$$\frac{d^{5}}{dx^{5}} (\sin x) = \cos x$$
+
+			$$\frac{d^{6}}{dx^{6}} (\sin x) = -\sin x$$
+
+			$$\frac{d^{7}}{dx^{7}} (\sin x) = -\cos x$$
+
+			$$\frac{d^{8}}{dx^{8}} (\sin x) = \sin x$$
+
+			Now, the factors of 99 are 3, 3 and 11.
+
+			We can see above that derivatives that are multiples
+			of 3 are $-\sin x$
+
+			So $$\frac{d^{99}}{dx^{99}} (\sin x) = -\sin x$$
+
+		% Q36
+		\item Find the $n$th derivative of each function by calculating the
+			first few derivatives and observing the pattern that occurs.
+
+		\begin{enumerate}
+			\item $f(x) = x^{n}$
+
+			We will assume here that $n$ is a positive integer, and for clarity find
+			the $r$th derivative
+
+			$$f(x) = x^{n}$$
+
+			$$f'(x) = nx^{n-1}$$
+
+			$$f'(x) = n(n-1)x^{n-2}$$
+
+			$$f'(x) = n(n-1)(n-2)x^{n-3}$$
+
+			So we can see the exponent will be $n-r$ while the
+			coefficient will be $n! - (n-r)!$
+
+			$$[n! - (n-r)!]x^{n-r}$$
+
+			\item $f(x) = \frac{1}{x}$
+
+			If we calculate the first few derivatives
+
+			$$f(x) = \frac{1}{x}$$
+
+			$$f'(x) = \frac{-1}{x^2}$$
+
+			$$f''(x) = \frac{(-1)(-2)}{x^{3}}$$
+
+			$$f'''(x) = \frac{(-1)(-2)(-3)}{x^{4}}$$
+
+			So the $n$th derivative is
+
+			
+			$$\frac{(-1)(-2)...(-n)}{x^{n+1}$$
+		\end{enumerate}
+
+		% Q37
+		\item For what values of $x$ does the graph of $f(x) = x + 2\sin x$
+			have a horizontal tangent?
+
+			To find the horizontal tangents we need to find the points at
+			the derivatives $f'(x) = 0$
+
+			$$f'(x) = 1 + 2\cos x$$
+
+			$$1 + 2\cos x = 0$$
+
+			$$2 \cos x = -1$$
+
+			$$\cos x = - \frac{1}{2}$$
+
+			On the unit circle $\cos (\frac{2\pi}{3}) = -\frac{1}{2}$ and
+			$\cos (\frac{4\pi}{3}) = -\frac{1}{2}$
+
+			So the horizontal tangents are at...
+
+			$$\frac{2\pi}{3} + k\pi, \frac{4\pi}{3} + k\pi$$ where $k$ is
+			an integer.
+
+		% Q38
+		\item For what values of $x$ does the graph of 
+			$f(x) = x^3 + 3x^2 + x + 4$ have a horizontal tangent?
+
+			First we need to find the derivative.
+
+			$$f'(x) = 3x^2 + 6x + 1$$
+
+			And find the roots of the equation.
+
+			$$3x^2 + 6x + 1 = 0$$
+
+			Which we can do by completing the square.
+
+			$$3x^2 + 6x = -1$$
+
+			$$x^2 + 2x = -\frac{1}{3}$$
+
+			$$x^2 + 2x + 1 = 1 - \frac{1}{3}$$
+
+			$$(x+1)^2 = 1 - \frac{1}{3}$$
+
+			$$(x+1)^2 = \frac{2}{3}$$
+
+			$$x + 1 = \pm \sqrt{\frac{2}{3}}$$
+
+			$$x = -1 \pm \sqrt{\frac{2}{3}}$$
+
+		% Q39
+		\item Show that the curve $y = 6x^3 + 5x - 3$ has no tangent
+			line with slope 4.
+
+
+			$$y = 6x^3 + 5x - 3$$
+
+			$$y' = 18x^2 + 5$$
+
+			$$18x^2 + 5 = 4$$
+
+			$$18x^2 + 1 = 0$$
+
+			We can use the quadratic descriminant to show there are no solutions.
+
+			$$b^2 - 4ac$$
+
+			$$0 - 4 (18) (1)$$
+
+			$$-72 < 0$$
+
+		% Q40
+		\item Find an equation of the tangent line to the curve $y = x\sqrt{x}$ that
+			is parallel to the line $y = 1 + 3x$
+
+			The gradient of the tangent line is 3.
+
+			We need to find the point on the curve where the gradient is 3.
+
+			$$y = x . x^{1/2} = x^{3/2}$$
+
+			$$y' = \frac{3\sqrt{x}}{2}$$
+
+			So we need to solve for $x$...
+
+			$$\frac{3\sqrt{x}}{2} = 3$$
+
+			$$3\sqrt{x} = 6$$
+
+			$$\sqrt{x} = 2$$
+
+			$$x = 4$$
+
+			And we can put this in our original equation to get $y$
+
+			$$y = 4\sqrt{4} = 8$$
+
+			And now use point-slope line equation form to find a parallel tangent
+
+			$$y - 8 = 3(x - 4)$$
+
+			$$y - 8 = 3x - 12$$
+
+			$$y = 3x - 4$$
+
+		% Q41
+		\item Find an equation of the normal line to the parabola $y = x^2 - 5x + 4$ that
+			is parallel to the line $x - 3y = 5$.
+
+			We are looking for a line parallel to $x - 3y = 5$
+
+			If we rearrange this so that $y$ is on the left we have $y = \frac{1}{3} - \frac{5}{3}$.
+
+			So we are looking for a line with a gradient of $\frac{1}{3}$, the perpendicular will
+			have a gradient of $-3$. So to find a normal on the curve that is perpendicular to
+			the line we must find a point on the curve where the tangent has a gradient of $-3$.
+
+			If we differentiate the curve we get $y' = 2x - 5$. We want to find the value of $x$
+			where $y' = -3$, so
+
+			$$2x - 5 = -3$$
+
+			$$2x = 2$$
+
+			$$x = 1$$
+
+			We must also know the value of $y$ when $x = 1$ so
+
+			$$(1)^2 - 5(1) + 4 = 0$$
+
+			So the normal equation is...
+
+			$$y - 0 = \frac{1}{3}(x - 1)$$
+
+			$$y = \frac{x}{3} - \frac{1}{3}$$
+
+		% TODO Q42
+
+		% Q43
+		\item The equation of motion of a particle is $s = t^3 - 3t$, where $s$ is in meters and
+			$t$ is in seconds. Find
+
+		\begin{enumerate}
+			\item the velocity and acceleration as functions of $t$.
+
+			The velocity is the first derivative so
+
+			$$s' = 3t^2 - 3$$
+
+			The acceleration is the second derivatrive so...
+
+			$$s'' = 6t$$
+
+			\item the acceleration after 2 s
+
+			$$s''(2) = 6(2) = 12 \text{ metres per second per second}$$
+
+			\item the acceleration when the velocity is 0.
+
+				$$3t^2 - 3 = 0$$
+
+				$$3t^2 = 3$$
+
+				$$t^2 = 1$$
+
+				$$t = \pm 1$$
+
+				So if we plug this into the equation of acceleration
+
+				$$6(1) = 6$$
+		\end{enumerate}
+
+		% TODO: Q44
+		% TODO: Q45
+		% TODO: Q46
+
+		% Q47
+		\item The position function of a particle is given by $s = t^3 - 4.5t^2 - 7t, t \geq 0$.
+
+			\begin{enumerate}
+				\item When does the particle reach a velocity of 5 m/s?
+
+				First we find the derivative...
+
+				$$s' = 3t^2 - 9t -7$$
+
+				And find the value of $t$ when $3t^2 - 9t - 7 = 5$
+
+				$$3t^2 - 9t - 2 = 0$$
+
+				$$t^2 - 3t - \frac{2}{3} = 0$$
+
+				Let's find the value of $t$ by completing the square.
+
+				$$t^2 - 3t = \frac{2}{3}$$
+
+				$$t^2 - 3t + \frac{9}{4} = \frac{2}{3} + \frac{9}{4}$$
+
+				$$(t - \frac{3}{2})^2 = \frac{35}{12}$$
+
+				$$t - \frac{3}{2} = \pm \sqrt{\frac{35}{12}}$$
+
+				$$t = \frac{3}{2} = \pm \sqrt{\frac{35}{12}}$$
+
+				The only positive result is
+
+				$$t = \frac{3}{2} + \sqrt{\frac{35}{12}} = 3.208$$
+
+				\item When is the acceleration 0? What is the significance
+					of this value of $t$?
+
+					When we differentiate to get the equation for acceleration
+					we get $s'' = 6t$
+
+					Thus the acceleration is 0 when $t = 0$. This is significant
+					as it is the initial value of $t$.
+			\end{enuemrate}
+
+			% Q48
+			\item If a ball is given a push so that it has an initial velocity of 5 m/s
+				down a certain inclined plane, then the distance it has rolled down
+				after $t$ seconds is $s = 5t + 3t^2$/
+
+			\begin{enumerate}
+				\item Find the velocity after 2 s.
+
+				$$s' = 5 + 6t$$
+
+				$$s'(2) = 5 + 6(2) = 17$$
+
+				\item How long does it take for the velocity to reach 35 m/s?
+
+					$$5 + 6t = 35$$
+
+					$$6t = 30$$
+
+					$$t = \frac{30}{6} = 5$$
+			\end{enumerate}
+
+			% Q49
+			\item If a rock is thrown vertically upward from the surface of Mars with
+				velocity 15 m/s, its height after $t$ seconds is $h = 15t - 1.86t^2$.
+
+				\begin{enumerate}
+					\item What is the velocity of the rock after 2 s?
+
+						First we have to differentiate the position equation to
+						get the velocity equation
+
+						$$h' = 15 - 3.72t$$
+
+						$$h'(2) = 15 - 3.72(2) = 7.56 \text{ m/s }$$
+
+					\item What is the velocity of the rock when its height is 25 m
+						on its way up? On its way down?
+
+						We need to find the value of $t$ when $h = 25$.
+
+						$$15t - 1.86t^2 = 25$$
+
+						$$15t - 1.86t^2 - 25 = 0$$
+
+						The solutions to this equation (from an equation solver)
+						are $h = 2.353, 5.711$.
+
+						We can find the velocity by plugging these values into the 
+						first derivative.
+
+						$$15 - 3.72(2.353) = 6.247 \text{ m/s }$$
+
+						The second value is the velocity on the way down.
+
+						$$15 - 3.72(5.711) = -6.245 \text{ m/s }$$
+
+				\end{enumerate}
+					
+	\end{enumerate}	
+\end{document}

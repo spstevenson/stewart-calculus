@@ -343,7 +343,7 @@
 
 			$$y - 3 = \frac{1}{3\sqrt{3}} (x - \frac{\pi}{3})$$
 
-			$$y - 3 = \frac{x}{3\sqrt{3}} - \frac{\pi}{\sqrt{3}$$
+			$$y - 3 = \frac{x}{3\sqrt{3}} - \frac{\pi}{\sqrt{3}}$$
 
 			$$ = \frac{x}{3\sqrt{3}} - \frac{\pi}{\sqrt{3}} + 3$$
 
@@ -408,7 +408,7 @@
 
 			$$G(r) = r^{1/2} + r^{1/3}$$
 
-			$$G'(r) = \frac{d}[dx} r^{1/2} + \frac{d}{dx} r^{1/3}$$
+			$$G'(r) = \frac{d}{dx} r^{1/2} + \frac{d}{dx} r^{1/3}$$
 
 			$$G'(r) = \frac{1}{2} r^{-1/2} + \frac{1}{3} r^{-2/3}$$
 
@@ -502,7 +502,7 @@
 			So the $n$th derivative is
 
 			
-			$$\frac{(-1)(-2)...(-n)}{x^{n+1}$$
+			$$\frac{(-1)(-2)...(-n)}{x^{n+1}}$$
 		\end{enumerate}
 
 		% Q37
@@ -722,7 +722,7 @@
 
 					Thus the acceleration is 0 when $t = 0$. This is significant
 					as it is the initial value of $t$.
-			\end{enuemrate}
+			\end{enumerate}
 
 			% Q48
 			\item If a ball is given a push so that it has an initial velocity of 5 m/s
@@ -825,5 +825,140 @@
 						$$24.5 - 9.8(3) = -4.9$$
 				\end{enumerate}
 					
+			% Q51
+			\item The cost, in dollars, of producing $x$ metres of a certain fabric
+				is 
+
+				$$C(x) = 1200 + 12x - 0.1x^2 + 0.0005x^3$$
+
+			\begin{enumerate}
+				\item Find the marginal cost function.
+
+					We need to differentiate the function.
+
+					$$C'(x) = \frac{d}{dx} 1200 + \frac{d}{dx} 12x - \frac{d}{dx} 0.1x^2 + \frac{d}{dx} 0.0005x^3$$
+
+					$$C'(x) = 12[\frac{d}{dx} x] - 0.1[\frac{d}{dx}x^2] + 0.0005[\frac{d}{dx} x^3]$$
+
+					$$C'(x) = 12[1] - 0.1[2x] + 0.0005[3x^2]$$
+
+					$$C'(x) = 12 - 0.2x + 0.0015x^2$$
+
+				\item Find $C'(200)$ and explain its meaning. What does it predict?
+
+					$$C'(200) = 12 - 0.2(200) + 0.0015(200)^2$$
+
+					$$C'(200) = 12 - 40 + 0.0015(40000)$$
+
+					$$C'(x) = 12 - 40 + 6000 = 5972$$
+
+					This is the marginal cost of of producing the 200th metre of fabric, it 
+					predicts how much it will cost to produce the 200th metre.
+			\end{enumerate}
+
+			% Q52
+			\item The cost function for a certain commodity is
+
+				$$C(x) = 84 + 0.16x - 0.0006x^2 + 0.000003x^3$$
+
+				\begin{enumerate}
+					\item Find and interpret $C'(100)$
+
+					$$C'(x) = \frac{d}{dx} 84 + \frac{d}{dx} 0.16x - \frac{d}{dx} 0.0006x^2 + \frac{d}{dx} 0.000003x^3$$
+
+					$$C'(x) = 0.16[\frac{d}{dx} x] - 0.0006[\frac{d}{dx} x^2] + 0.000003[\frac{d}{dx} x^3]$$
+
+					$$C'(x) = 0.16[1] - 0.0006[2x] + 0.000003[3x^2]$$
+
+					$$C'(x) = 0.16 - 0.0012x + 0.000009x^2$$
+
+					$$C'(100) = 0.16(100) - 0.0012(100) + 0.000009(100)^2$$
+
+					$$C'(100) = 0.16 - 0.12 + 0.000009(10000)$$
+
+					$$C'(100) = 0.16 - 0.12 + 0.09 = 0.13$$
+
+					This is the approximate cost of producing the 10th item.
+
+					\item Compare $C'(100)$ with the cost of producing the 101st item.
+
+					$$C(101) = 84 + 0.16(101) - 0.0006(101)^2 + 0.000003(101)^3 = 97.130303$$
+
+					$$C(100) = 97$$
+
+					We can see the values are very close.
+
+				\end{enumerate}
+
+				% Q53
+				\item A spherical balloon is being inflated. Find the rate of increase of the surface
+					area ($S=4\pi r^2$) with respect to the radius $r$ when $r$ is (a) 20 cm, (b)
+					40 cm, and (c) 60 cm. What conclusion can you make?
+
+					First lets differentiate the function
+
+					$$S' = 8\pi r$$
+
+					$$S'(20) = 160\pi \text{ cm}^2 /\text{ cm}$$
+
+					$$S'(40) = 320\pi \text{ cm}^2 /\text{ cm}$$
+
+					$$S'(60) = 480\pi \text{ cm}^2 /\text{ cm}$$
+
+				% Q54
+				\item If a tank holds 5000 litres of water, which drains from the bottom of the tank
+					in 40 minutes, then Toricelli's Law gives the volume $V$ of water remaining
+					in the tank after $t$ minutes as
+
+					$$V = 5000(1 - \frac{1}{40}t)^2 \text{	} 0 \leq t \leq 40$$
+
+					Find the rate at which water is draining from the tank after (a) 5 min,
+					(b) 10 min, (c) 20 min, and (d) 40 min. At what time is the water
+					flowing out the fastest? The slowest? Summarize your feelings.
+
+					First lets differentiate $V = 5000(1 - \frac{1}{40}t)^2$.
+
+	$$V' =  \lim _{h \to 0} \frac{5000(1 - \frac{1}{40}(t + h))^2 - 5000(1 - \frac{1}{40}t)^2}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{5000(1 - \frac{2(t+h)}{40} + (\frac{(t+h)}{40})^2) - 5000(1 - \frac{2t}{40} + (\frac{t}{40})^2)}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{5000(1 - \frac{2(t+h)}{40} + \frac{(t+h)^2}{1600}) - 5000(1 - \frac{2t}{40} + (\frac{t^2}{1600})}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{5000(1 - \frac{2(t+h)}{40} + \frac{t^2 + 2th + h^2}{1600}) - 5000 + \frac{10000t}{40} - \frac{5000t^2}{1600}}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{5000(1 - \frac{2(t+h)}{40} + \frac{t^2}{1600} + \frac{2th}{1600} + \frac{h^2}{1600}) - 5000 + \frac{10000t}{40} - \frac{5000t^2}{1600}}{h}$$
+
+	
+	$$V' = \lim _{h \to 0} \frac{5000(1 + \frac{40t^2 + 80th + 40h^2 - 3200t - 3200h}{64000}) - 5000 + \frac{10000t}{40} - \frac{5000t^2}{1600}}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{5000 + \frac{5000(40t^2 + 80th + 40h^2 - 3200t - 3200h}{64000} - 5000 + \frac{16000000t - 200000t^2}{64000}}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{\frac{200000t^2 + 400000th + 200000h^2 - 16000000t - 16000000h}{64000} + \frac{16000000t - 200000t^2}{64000}}{h}$$
+
+	$$V' = \lim _{h \to 0} \frac{200000t^2 + 400000th + 200000h^2 - 16000000t - 16000000h + 16000000t - 200000t^2}{64000h}$$
+
+	$$V' = \lim _{h \to 0} \frac{400000th + 200000h^2 - 16000000h}{64000h}$$
+
+	$$V' = \lim _{h \to 0} \frac{400000t + 200000h - 16000000}{64000}$$
+
+	$$V' = \frac{400000t - 16000000}{64000}$$
+
+	$$V' = \frac{400t - 16000}{64}$$
+
+	$$V' = \frac{25t - 1000}{4}$$
+
+	Now we can work out the rate of drainage for the various values of $t$
+
+	$$V'(5) = \frac{25(5) - 1000}{4} = \frac{1000 - 125}{4} = \frac{-875}{4} = - 218.75$$
+
+	$$V'(10) = \frac{25(10) - 1000}{4} = \frac{1000 - 250}{4} = \frac{-750}{4} = - 187.5$$
+
+	$$V'(20) = \frac{25(20) - 1000}{4} = \frac{1000 - 500}{4} = \frac{-500}{4} = - 125$$
+
+	$$V'(40) = \frac{25(40) - 1000}{4} = \frac{1000 - 1000}{4} = 0$$
+
+	We can see that the water is flowing fastest in the beginning and slowest at the end. As
+	$t$ approaches 40, the rate of flow decreases.
+
 	\end{enumerate}	
 \end{document}

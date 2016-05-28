@@ -2,6 +2,8 @@
 
 \usepackage{amsmath}
 
+\usepackage{gensymb}
+
 \renewcommand{\thesection}{}
 
 \begin{document}
@@ -960,5 +962,284 @@
 	We can see that the water is flowing fastest in the beginning and slowest at the end. As
 	$t$ approaches 40, the rate of flow decreases.
 
+		% Q55
+		\item Boyle's Law states that when a sample of gas is compressed at a constant
+			temperature, the pressure $P$ of the gas is inversely proportional to the
+			volume $V$ of the gas.
+
+		\begin{enumerate}
+			\item Suppose that the pressure of a sample of air that occupies 
+				0.106 m\textsuperscript{th} at 25 \degree C is 50 kPa. Write $V$ as
+				a function of $P$.
+
+				$P$ is inversely proportional to $V$ so
+
+				$V = k\frac{1}{P}$ 
+
+				So $0.106 = k\frac{1}{50}$
+
+				$$k = 50 \times 0.106 = 5.3$$
+
+				Therefore
+
+				$$V = \frac{5.3}{P}$$
+
+			\item Calculate $dV/dP$ when $P = 50 \text{ kPa}$. What is the meaning of this
+				derivative? What are its units?
+
+				So $V = 5.3P^{-1}$
+
+				$$V' = -5.3P^{-2}$$
+
+				$$V' = - \frac{5.3}{P^2}$$
+
+				$$V'(50) = - \frac{5.3}{(50)^2}$$
+
+				$$V'(50) = - \frac{5.3}{2500} = - 0.00212$$
+
+				The units are m\textsuperscript{3} / kPa. This is the instantaneous rate of change at
+				50 kPa at 25 \degree C.
+		\end{enumerate}
+
+			% Q56
+			\item Newton's Law of Gravitation says that the the magnitude $F$ of the force exerted by a body
+				of mass $M$ is 
+
+				$$F = \frac{GmM}{r^2}$$
+
+				where $G$ is the gravitational constant and $r$ is the distance between the bodies.
+
+			\begin{enumerate}
+				\item Find $dF/dR$ and explain its meaning. What does the minus sign indicate.
+
+					$$F = GmMr^{-2}$$
+
+					$$\frac{dF}{dr} = -2GmMr^{-3}$$
+
+					$$\frac{dF}{dr} = - \frac{2GmM}{r^3}$$
+
+					The minus signs indicate that the marginal change in force is negative. The rate at
+					which the force decreases gets smaller.
+
+				\item Suppose it is known that the earth attracts an object with a force that decreases at the
+					rate of 2 N/km when $r$ = 20,000 km. How fast does this force change when $r$ = 10,000?
+
+					$$- \frac{k}{20000^{3}} = 2$$
+
+					$$- k = 2 \times 20000^{3}$$
+
+					$$k = - 1.6 \times 10^{13}$$
+
+					$$- \frac{-1.6 \times 10^{13}}{10000^{3}} = 16 \text{ N/km}$$
+			\end{enumerate}
+
+			% Q57
+			\item Use the definition of a derivative to show that if $f(x) = 1/x$, then $f'(x) = - 1/x^2$. (This proves
+				the Power Rule for the case $n = -1$.)
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{ \frac{1}{(x+h)} - \frac{1}{x} }{h}$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{ \frac{x - (x+h)}{x(x+h)} }{h}$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{x - (x+h)}{xh(x+h)}$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{-h}{xh(x+h)}$$
+
+				$$f'(x) = \lim \limits _{h \to 0} - \frac{1}{x(x+h)}$$
+
+				$$f'(x) = - \frac{1}{x^2}$$
+
+			% Q58
+			\item Prove, using the defintion of derivative, that if $f(x) = \cos x$, then $f'(x) = -\sin x$.
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{\cos (x+h) - \cos x}{h}$$
+
+				$$\cos (x+h) = \cos x \cos h - \sin x \sin h$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{\cos x \cos h - \sin x \sin h - \cos h}{h}$$
+
+				$$\cos x \cos h - \cos x = \cos x (\cos h - 1)$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \frac{\cos x ( \cos h - 1) - \sin x \sin h}{h}$$
+
+				$$f'(x) = \lim \limits _{h \to 0} \cos x (\frac{\cos h - 1}{h}) - \sin x (\frac{\sin h}{h})$$
+
+				$$\lim \limits _{h \to 0} \frac{\sin h}{h} = 1$$
+
+				$$\lim \limits _{h \to 0} \frac{\cos h - 1}{h} = 0$$
+
+				$$f'(x) = (0)\cos x - (1) \sin x = - \sin x$$
+			% Q59
+			\item The equation $$y'' + y' - 2y = \sin x$$ is called a differential equation because
+				it involves an unknown function $y$ and its derivatives $y'$ and $y''$. Find constants
+				$A$ and $B$ such that the function $y = A \sin x + B \cos x$ satisfies this
+				equation.
+
+				If $y = A \sin x + B \cos x$
+
+				then
+
+				$y' = A \cos x - B \sin x$ and $y'' = - A\sin x - B \cos x$
+
+				If we substitute these equations into our original equation
+
+				$$(-A \sin x - B \cos x) + (A \cos x - B \sin x) - 2(A \sin x + B \cos x = \sin x$$
+
+				$$A \cos x - A \sin x - B \cos x - B \sin x - 2A \sin x + 2B \cos x = \sin x$$
+
+				Gathering together trigonometric terms...
+
+				$$(A - B + 2B) \cos x +(-A - B - 2A) \sin x = \sin x$$
+
+				$$(A+B) \cos x + (-3A - B) \sin x = \sin x$$
+
+				For this to be true $A+B=0$ and $-3A - B = 1$
+
+				$$A = -B$$
+
+				Substituting into the other equation
+
+				$$3B - B = 1$$
+
+				$$B = \frac{1}{2}$$
+
+				Finding $A$...
+
+				$$A + \frac{1}{2} = 0$$
+
+				$$A = - \frac{1}{2}$$
+
+			% Q60
+			\item Find constants $A$,$B$ and $C$ such that the function $y = Ax^2 + Bx + C$ satisfies the
+				differential equation $y'' + y' - 2y = x^2$
+
+				First we need to find the first and second derivatives of $y$.
+
+				$$y' = 2Ax + B$$
+
+				$$y'' = 2A$$
+
+				Now we can substitute these values in
+
+				$$2A + 2Ax + B - 2(Ax^2 + Bx + C) = x^2$$
+
+				$$2A + 2Ax + B - 2Ax^2 - 2Bx + 2C = x^2$$
+
+				$$2A(-x^2 + x + 1) + B(1-2x) - 2C = x^2$$
+
+				Because the only term that contains an $x^2$ factory $A$ must be $- \frac{1}{2}$
+
+				If $A = -\frac{1}{2}$
+
+				$$x^2 - x - 1 + B(1-2x) - 2C = x^2$$
+
+				We must cancel out the $x$ term so $B$ must be $-\frac{1}{2}$
+
+				If $B = -\frac{1}{2}$
+
+				$$x^2 - x - 1 + - \frac{1}{2} + x - 2C = x^2$$
+
+				$$x^2 - \frac{3}{2} - 2C = x^2$$
+
+				We must cancel out the constant so $C$ must be $-\frac{3}{4}$
+
+			% TODO: Q61
+
+			% TODO: Q62
+			\item
+			\begin{enumerate}
+				\item Find equations of both lines through the point (2, -3) that
+					are tangent to the parabola $y = x^2 + x$.
+			\end{enumerate}	
+
+			% Q63
+			\item For what values of \emph{a} and \emph{b} is the line $2x + y = b$
+				tangent to the parabola $y = ax^2$ when $x = 2$?
+
+				First lets re-arrange the linear equation.
+
+				$$2x + y = b$$
+
+				Is equal to...
+
+				$$y = -2x + b$$
+
+				From this we know the gradient of the line is -2.
+
+				The derivative of the parabola is...
+
+				$$y' = 2ax$$
+
+				The line is a tangent at $x = 2$ so
+
+				$$2a(2) = -2$$
+
+				$$4a = -2$$
+
+				$$a = \frac{-2}{4} = -\frac{1}{2}$$
+
+				To find $b$ we must find the point where the line meets the
+				parabola.
+
+				$$y = -\frac{1}{2}(2)^2 = -2$$
+
+				So...
+
+				$$-2 = -2(2) + b$$
+
+				$$b = 2$$
+
+			% Q64
+			\item Find a parabola with equation $y = ax^2 + bx + c$ that has slope 4
+				at $x = 1$, slope -8 at $x = -1$, and passes through point $(1,15)$.
+
+				Firstly the derivative of the quadratic is...
+
+				$$y' = 2ax + b$$
+
+				Therefore
+
+				$$2a + b = 4$$
+				$$-2a + b = -8$$
+
+				From the first equation
+
+				$$2a = 4 - b$$
+				$$a = \frac{4-b}{2}$$
+
+				Plugging this into the second equation
+
+				$$-2(\frac{4-b}{2}) + b = -8$$
+				$$-(4-b) + b = -8$$
+				$$b-4+b = -8$$
+				$$2b - 4 = - 8$$
+				$$2b = -4$$
+				$$b = -2$$
+
+				If we plug the value for $b$ into the first equation
+
+				$$2a -2 = 4$$
+				$$2a = 6$$
+				$$a = 3$$
+
+			% Q65
+			\item Find a cubic function $y = ax^3 + bx^2 + cx + d$ whose graph has horizontal
+				tangents at the points $(-2,6)$ and $(2,0)$.
+
+				First we find the derivative of the equation
+
+				$$y' = 3ax^2 + 2bx + c$$
+
+				We know that...
+
+				$$3a(-2)^2 + 2b(-2) + c = 0$$
+				$$12a -4b + c = 0$$
+
+				and...
+
+				$$3a(2)^2 + 2b(2) + c = 0$$
+				$$12a + 4b + c = 0$$
+
+ 
 	\end{enumerate}	
 \end{document}

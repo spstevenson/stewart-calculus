@@ -1222,7 +1222,7 @@
 				$$2a = 6$$
 				$$a = 3$$
 
-			% Q65
+			% TODO: Q65
 			\item Find a cubic function $y = ax^3 + bx^2 + cx + d$ whose graph has horizontal
 				tangents at the points $(-2,6)$ and $(2,0)$.
 
@@ -1240,6 +1240,103 @@
 				$$3a(2)^2 + 2b(2) + c = 0$$
 				$$12a + 4b + c = 0$$
 
- 
+			% Q67
+			\item Find the parabola with equation $y = ax^2 + bx$ whose tangent line at $(1,1)$
+				has equation $y = 3x - 2$
+
+				So the gradient at $x = 1$ is 3
+
+				The derivative of the parabola is...
+
+				$$y' = 2ax + b$$
+
+				So
+	
+				$$2a(1) + b = 3$$
+
+				$$2a + b = 3$$
+
+				From the equation of the parabola
+
+				$$a(1)^2 + b(1) = 1$$
+				$$a + b = 1$$
+
+				$$a = 1 - b$$
+
+				Plugging in the value for $a$ into the other formula
+
+				$$2(1-b) + b = 3$$
+				$$2-2b+b=3$$
+				$$2-b = 3$$
+				$$b=-1$$
+
+				Plugging this value for $b$ back into the first equation
+
+				$$a-1 = 1$$
+				$$a = 2$$
+
+			% Q68
+ 			\item A tangent line is drawn to the hyperbola $xy = c$ at a point $P$.
+			\begin{enumerate}
+				\item Show that the midpoint of the line segment cut from this
+					tangent line by the coordinate axes is $P$.
+
+					$$y = \frac{c}{x}$$
+
+					Let's pick a point at $x = a$
+
+					$$P = (a, \frac{c}{a})$$
+
+					The equation of the line is...
+
+					$$(y - \frac{c}{a}) = - \frac{c}{a^2}(x - a)$$
+
+					$$y - \frac{c}{a} = - \frac{cx}{a^2} + \frac{c}{a}$$
+
+					$$y = - \frac{c}{a^2}x + \frac{2c}{a}$$
+
+					$$y = - \frac{c}{a^2}x + \frac{2c}{a}$$
+
+					So the $y$ intercept is $\frac{2c}{a}$
+
+					The $x$ intercept is 
+
+					$$- \frac{c}{a^2}x + \frac{2c}{a} = 0$$
+					$$\frac{c}{a^2}x = \frac{2c}{a}$$
+
+					$$x = \frac{a^2}{c} \times \frac{2c}{a}$$
+					$$x = 2a$$
+
+					Because the $y$ intercept is $2P_{y}$ and the $x$ intercept
+					is $2P_{x}$, $P$ is the midpoint of the line.
+
+				\item Show that the triangle formed by the tangent line and the coordinate
+					axes always has the same area, no matter where $P$ is located on the
+					hyperbola.
+
+					The equation for the area of a right angled triangle is $A = \frac{1}{2}mn$
+
+					From part (a) we know that the height of the triangle is $\frac{2c}{a}$ the
+					width of the triangle is $\frac{2c}{a}$
+
+					$$\frac{1}{2}(2a \times \frac{2c}{a}) = c$$
+
+					As $c$ is a constant, the area is constant.
+			\end{enumerate}
+
+			% Q69
+			\item Evaluate $\lim \limits _{x \to 1} \frac{x^{1000} - 1}{x - 1}$
+
+				This has a similar form to the definition of the derivative
+
+				$$f'(x) = \lim \limits _{x \to a} \frac{f(x) - f(a)}{x-a}$$
+				
+				If we take $f(x) = x^{1000}$ then
+
+				$$\frac{d}{dx} x^{1000} = \lim \limits _{x \to 1} \frac{x^{1000} - 1}{x-1}$$
+
+				So the limit is equal to $$\frac{d}{dx} x^{1000} = 1000x^{999}$$
+
+				$$1000(1)^{9999} = 1000$$
 	\end{enumerate}	
 \end{document}

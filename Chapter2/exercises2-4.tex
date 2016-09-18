@@ -132,5 +132,28 @@
 
 			$$y' = - \frac{2\cos x}{\sin^{2} x} - 5 \sin x$$
 			
+		% Q9
+		\item $h(\theta) = \theta \csc \theta - \cot \theta$
+
+			This is equal to $h(\theta) = \frac{\theta}{\sin \theta} - \cot \theta$
+
+			$$\frac{d}{dx} \cot \theta = - \csc^{2} \theta$$
+
+			Let's use the quotient rule to calculate $\frac{d}{dx} \frac{\theta}{\sin \theta}$
+
+			$$f(x) = \theta$$
+			$$g(x) = \sin \theta$$
+			$$\frac{d}{dx} [f(x)] = 1$$
+			$$\frac{d}{dx} [g(x)] = \cos \theta$$
+
+			$$\frac{d}{dx} \frac{\theta}{\sin \theta} = \frac{\sin \theta - \theta \cos \theta}{\sin^{2} \theta}$$
+
+			So...
+
+			$$h'(\theta) = \frac{\sin \theta}{\sin^{2} \theta} - \frac{\theta \cos \theta}{\sin^{2} \theta} + \csc^{2} \theta$$
+
+			Simplifying...
+
+			$$h'(\theta) = \csc \theta - \theta \cot \theta \csc \theta + \csc^{2} \theta$$
 	\end{enumerate}
 \end{document}
